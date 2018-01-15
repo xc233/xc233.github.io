@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Github + Hexo 搭建 Blog | Xiaochen ZHANG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+      <link rel="icon" href="/favicon.png">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/js/google-code-prettify/tomorrow-night-eighties.min.css">
+
+  </head>
+
+  <body>
+
+<header>
+	<a id="logo" href="/" title="Xiaochen ZHANG">
+	<img src="/favicon.png" alt="Xiaochen ZHANG"></a>
+	
+	
+		<!--搜索栏-->
+		<i class="js-toggle-search iconfont icon-search"></i>
+
+
+<form class="js-search search-form search-form--modal" method="get" action="http://gushi.li" role="search">
+	<div class="search-form__inner">
+		<div>
+			<i class="iconfont icon-search"></i>
+			<input class="text-input" placeholder="Enter Key..." type="search">
+		</div>
+	</div>
+</form>
+	
+
+	
+		<!--侧边导航栏-->
+		<a id="nav-toggle" href="#"><span></span></a>
+
+<nav>
+	<div class="menu-top-container">
+		<ul id="menu-top" class="menu">
+			
+				
+				<li class="current-menu-item">
+					<a href="http://weibo.com/" target="_blank">Weibo</a>
+				</li>
+			
+		</ul>
+	</div>
+</nav>
+	
+
+</header>
+<div class="m-header ">
+	<section id="hero1" class="hero">
+		<div class="inner">
+		</div>
+	</section>
+	
+		<figure class="top-image" style='background-image: url(/images/1.jpg)' data-enable=false></figure>
+	
+</div>
+
+<!--文章列表-->
+<div class="wrapper">
+  
+    <!--文章-->
+<article>
+	
+  
+    <h1 class="post-title" itemprop="name">
+      Github + Hexo 搭建 Blog
+    </h1>
+  
+
+	<div class='post-body mb'>
+		<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>之前购买了阿里云服务器，用HTML5+CSS+JS搭建了个人博客，但瓶颈在于服务器只有1M带宽，加载一张较大的图片都要好半天，于是便放弃了自己搭Blog的想法。某一天偶然看到Github Pages + Hexo可以搭建Blog，而且不限带宽，遂重启这一计划。</p>
+<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h4 id="Win-OS-下需配置"><a href="#Win-OS-下需配置" class="headerlink" title="Win OS 下需配置"></a>Win OS 下需配置</h4><blockquote>
+<ul>
+<li>Git</li>
+<li>Nodejs</li>
+<li>Hexo</li>
+<li>需要注册Github</li>
+</ul>
+</blockquote>
+<h2 id="搭建Nodejs开发环境"><a href="#搭建Nodejs开发环境" class="headerlink" title="搭建Nodejs开发环境"></a>搭建Nodejs开发环境</h2><p>进入<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node官方网站</a>，下载对应版本即可</p>
+<h2 id="搭建Git"><a href="#搭建Git" class="headerlink" title="搭建Git"></a>搭建Git</h2><p>进入<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git官方网站</a>，下载对应版本即可</p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><h3 id="一、Hexo安装"><a href="#一、Hexo安装" class="headerlink" title="一、Hexo安装"></a>一、Hexo安装</h3><p>找一个开发文件夹，鼠标右键 Git Bash Here<br><img src="/images/1.png" alt=""><br><img src="/images/2.png" alt=""><br>输入npm命令即可安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g    </span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>第一句是安装hexo，第二句是安装hexo部署到git page的deployer，两个都需要安装。</p>
+<h3 id="二、Hexo初始化"><a href="#二、Hexo初始化" class="headerlink" title="二、Hexo初始化"></a>二、Hexo初始化</h3><p>安装完成后，新建目录（我用的是C:\Blog\Hexo），进入C:\Blog\Hexo文件夹下鼠标右键，点击Git Bash Here，进入Git命令框，执行以下操作。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure></p>
+<p>建立完成后会创建如下文件目录<br><img src="/images/1.jpg" alt=""><br>继续执行以下语句<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
+<p>此时，打开浏览器，进入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost:4000</span><br></pre></td></tr></table></figure></p>
+<p>即可看到本地效果,<br><img src="/" alt="">Hexo配置完成</p>
+<h2 id="将hexo渲染的博客部署到GitHub-Pages上"><a href="#将hexo渲染的博客部署到GitHub-Pages上" class="headerlink" title="将hexo渲染的博客部署到GitHub Pages上"></a>将hexo渲染的博客部署到GitHub Pages上</h2><h3 id="一、注册Github账户"><a href="#一、注册Github账户" class="headerlink" title="一、注册Github账户"></a>一、注册Github账户</h3><ul>
+<li>访问<a href="https://github.com/" target="_blank" rel="noopener">Github</a>首页</li>
+<li>点击Sign up注册</li>
+</ul>
+<h3 id="二、创建Repository"><a href="#二、创建Repository" class="headerlink" title="二、创建Repository"></a>二、创建Repository</h3><p>注册完成后，点击New Repository<br><img src="/" alt=""></p>
+<h3 id="三、配置ssh密钥"><a href="#三、配置ssh密钥" class="headerlink" title="三、配置ssh密钥"></a>三、配置ssh密钥</h3><h5 id="第一步、检查本机是否存在密钥"><a href="#第一步、检查本机是否存在密钥" class="headerlink" title="第一步、检查本机是否存在密钥"></a>第一步、检查本机是否存在密钥</h5><p>桌面打开Git Bash Here,输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh</span><br></pre></td></tr></table></figure></p>
+<h5 id="第二步、创建ssh密钥"><a href="#第二步、创建ssh密钥" class="headerlink" title="第二步、创建ssh密钥"></a>第二步、创建ssh密钥</h5><p>输入:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br><span class="line">#这将按照你提供的邮箱地址，创建一对密钥</span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]</span><br></pre></td></tr></table></figure></p>
+<p>可以不需要设置密码，直接按回车就可以，直到结束。</p>
+<h5 id="第三步、"><a href="#第三步、" class="headerlink" title="第三步、"></a>第三步、</h5>
+	</div>
+	<div class="meta split">
+		
+			<span>本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次</span>
+		
+		<time class="post-date" datetime="2018-01-15T03:59:00.000Z" itemprop="datePublished">2018-01-15</time>
+	</div>
+</article>
+
+<!--评论-->
+
+	
+<div class="ds-thread" data-thread-key="Github + Hexo 搭建个人博客" data-title="Github + Hexo 搭建 Blog" data-url="http://yoursite.com/2018/01/15/Github + Hexo 搭建个人博客/"></div>
+<script type="text/javascript">
+
+var duoshuoQuery = {short_name:"yumemor"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+
+
+  
+</div>
+
+
+  <svg id="bigTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+    <path d="M0 0 L50 100 L100 0 Z"></path>
+  </svg>
+
+  
+
+
+  <div class="wrapper"></div>
+
+
+
+
+
+<div class="fat-footer">
+	<div class="wrapper">
+		<div class="layout layout--center">
+			<div class="layout__item palm-mb">
+				<div class="media">
+					<img class="headimg" src='/uploads/1.jpg' alt='Xiaochen Zhang'>
+					<div class="media__body">
+						<h4>Xiaochen ZHANG</h4>
+						<p class='site-description'>Student , Based in China.</p>
+					</div>
+				</div>
+				<div class="author-contact">
+					<ul>
+						
+							
+							<li>
+				        		<a href="http://weibo.com/" target="_blank">
+				        			
+				        				<i class="iconfont icon-weibo"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+							
+							<li>
+				        		<a href="https://github.com/xc233" target="_blank">
+				        			
+				        				<i class="iconfont icon-github"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+							
+							<li>
+				        		<a href="https://www.zhihu.com/people/mo-ran-wei-ming-xi" target="_blank">
+				        			
+										<i class="iconfont icon-zhihu"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer" role="contentinfo">
+	<div class="wrapper wrapper--wide split split--responsive">
+		
+			<span>本站总访问量 <span id="busuanzi_value_site_pv"></span> 次, 访客数 <span id="busuanzi_value_site_uv"></span> 人次</span>
+		</br>
+		
+		<span>© 2018  Xiaochen ZHANG .	 Powered by <a href="http://hexo.io">Hexo</a></span>
+	</div>
+</footer>
+
+	<!-－这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
+	<!--<script src="http://lib.sinaapp.com/js/jquery/2.0/jquery.min.js"></script>-->
+	<script src="/js/lib.js"></script>
+	<script src="/js/google-code-prettify/prettify.js"></script>
+	<script src="/js/module.js"></script>
+	<script src="/js/script.js"></script>
+	
+		<script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+	<script type='text/javascript'>
+		//代码高亮
+		$(document).ready(function(){
+	 		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+   			prettyPrint();
+		});
+	</script>
+	</body>
+</html>
