@@ -89,7 +89,8 @@
         var bannerNode = $('.top-image');
         if(bannerNode.data('enable')){
             var index = 4 ;
-            bannerNode.attr('style','background-image:url(/banner/'+index+'.jpg)');
+            //bannerNode.attr('style','background-image:url(/banner/'+index+'.jpg)');
+            bannerNode.attr('style','background-image:url(https://ws1.sinaimg.cn/large/0072A1Xdly1fnjfrj011dj30u0140au1.jpg)');
         }
     })
 
