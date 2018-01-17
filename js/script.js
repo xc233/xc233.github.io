@@ -90,7 +90,7 @@
         if(bannerNode.data('enable')){
             var index = 4 ;
             //bannerNode.attr('style','background-image:url(/banner/'+index+'.jpg)');
-            bannerNode.attr('style','background-image:url(https://ws1.sinaimg.cn/large/0072A1Xdly1fnjfrj011dj30u0140au1.jpg)');
+            bannerNode.attr('style','background-image:url(https://ws1.sinaimg.cn/large/0072A1Xdly1fnjx9h48scj31hc0po7k3.jpg)');
         }
     })
 
