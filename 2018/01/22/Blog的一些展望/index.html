@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Blog的一些展望 | Shawn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+      <link rel="icon" href="/favicon.png">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/js/google-code-prettify/tomorrow-night-eighties.min.css">
+
+  </head>
+
+  <body>
+
+<header>
+	<a id="logo" href="/" title="Shawn">
+	<img src="/favicon.png" alt="Shawn"></a>
+	
+	
+
+	
+
+</header>
+<div class="m-header ">
+	<section id="hero1" class="hero">
+		<div class="inner">
+		</div>
+	</section>
+	
+		<figure class="top-image" style='background-image: url(https://ws1.sinaimg.cn/large/dd0c8f65ly1fo4tk5dbb2j21hc0u0tj4.jpg)' data-enable=false></figure>
+	
+</div>
+
+<!--文章列表-->
+<div class="wrapper">
+  
+    <!--文章-->
+<article>
+	
+  
+    <h1 class="post-title" itemprop="name">
+      Blog的一些展望
+    </h1>
+  
+
+	<div class='post-body mb'>
+		<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Blog搭建好也有一周了，这一周，经历了各种各样的测试，算是勉强完成？下面就谈一谈我踩的坑和接下来要维护&amp;开发的工作。</p>
+<h3 id="Host-平台"><a href="#Host-平台" class="headerlink" title="Host 平台"></a>Host 平台</h3><p>起初采用了github pages + Hexo 搭建的Blog，但经同学们帮忙测试，github并不是很稳定，经常会出现加载慢、加载不出来的情况。迫不得己，只好去寻找一个更优的解决方案。采用了「中国版的Github」 <a href="https://coding.net/" target="_blank" rel="noopener"><em>Coding Pages</em></a>   进行托管，后台管理的界面风格有待熟悉，但加载网页真的是快多了（围笑）。同样支持域名绑定，但是绑定域名后必须要等5s的广告才能跳转到Blog。还好官方提供了解决办法：在blog的最底部引入了 Coding.net 要求的外链，审核通过可取消跳转等待广告。</p>
+<h3 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h3><p>之前购买过阿里云的服务器，在这方面算是轻车熟路了。原本是想买 xc233.cn 的域名，一年价格不算贵，但是在中国大陆使用的话就必须要去工信部备案，否则DNS服务器是无法解析成功的。备案正经要走一套流程，还要不少时间，sad…室友之前总叫嚷着让我和他一起写电子产品评测，索性直接要了一个二级域名：xc.snaphouse.xin 省心又省力，舒服~  </p>
+<p>By the way，给snappium的snaphouse做个硬广：欢迎大家访问 <a href="http://www.snaphouse.xin" target="_blank" rel="noopener">www.snaphouse.xin</a> 网站，一起围观他填补不了的大坑（hhh…</p>
+<h3 id="Hexo-Theme"><a href="#Hexo-Theme" class="headerlink" title="Hexo Theme"></a>Hexo Theme</h3><p>hexo的官网上有很多主题，可我为什么偏偏就选中了这个主题呢？  </p>
+<p>当然是因为：<strong>好看啦！</strong>  </p>
+<p>可以很坦诚的说，看过了所有的hexo官网里的主题，就这个瞅着最喜欢。  </p>
+<p>但是这个单纯的好看，就给我自己挖下了一个大坑（😭😭😭</p>
+<h4 id="经短暂的使用，发现有如下几个问题"><a href="#经短暂的使用，发现有如下几个问题" class="headerlink" title="经短暂的使用，发现有如下几个问题"></a><strong>经短暂的使用，发现有如下几个问题</strong></h4><ul>
+<li>主题并没有 归档 / 关于 等相关按钮</li>
+<li>每篇文章没有Tag标签，无法按照Tag分类</li>
+<li>首页的sidebar就是个摆设，没有实现导航的功能</li>
+<li><del>自带的 <strong>多说</strong> 评论已经停止服务，评论功能失效</del></li>
+<li>搜索功能是通过 google:site 搜索引擎命令完成的，google大家伙自然是上不去的，卵用？？？</li>
+</ul>
+<h4 id="可以拓展的功能-优化的细节"><a href="#可以拓展的功能-优化的细节" class="headerlink" title="可以拓展的功能/优化的细节"></a><strong>可以拓展的功能/优化的细节</strong></h4><ul>
+<li>RSS订阅</li>
+<li>文章内部加入一件返回顶部的Button</li>
+<li><del>文章内部的超链接样式加入下划线 Or 颜色提示，更容易分辨</del></li>
+</ul>
+<p>作为一名使用者，我在此非常感谢Theme的原作者 <a href="https://github.com/justpsvm/hexo-theme-varaint" target="_blank" rel="noopener">Yumermor</a> 。你的工作，大大简化了网站的页面配置。  </p>
+<p>但作为一个骄傲的完美主义者，这些问题我自然是忍不了的。在接下来很长的一段时间里，我会亲自着手去改善这些不完美的地方。</p>
+<h3 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h3><p>在多说已经停止服务后，几个类似功能的产品也相继倒下。  </p>
+<p>可是，Blog 没有评论功能多平庸啊（程序员不要子的么？？？  </p>
+<h4 id="有如下几个方案"><a href="#有如下几个方案" class="headerlink" title="有如下几个方案"></a><strong>有如下几个方案</strong></h4><ul>
+<li>discuss</li>
+<li>valine</li>
+<li>来必力</li>
+<li>有言 / 畅言 </li>
+<li>Gitment / Gitalk</li>
+</ul>
+<p>discuss是全球最大的第三方评论插件，但是GFW的原因，用不了，GG。  </p>
+<p>有言 / 畅言 功能差不多,但是别哪天再停止服务了，毕竟日子都不好过。  </p>
+<p>Gitment / Gitalk 基于Github Issue 实现的评论功能，可除了程序员还谁会有github account 呢？ 受众面太窄。  </p>
+<p>来必力是韩国的一个评论插件，本土化做的不错，可万一哪天报个 오류（ERROR）的错误，我该怎么办呢？  </p>
+<p>最终，就剩下valine了，<del>等测试好了就加上。（给自己挖坑）</del></p>
+<h3 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h3><p><del>由于本博客刚刚搭建不久，也没什么特别优秀的文章，所以网站暂时并未于Google Or Baidu 收录。</del><br>请放心，也许会迟到，但绝不会缺席。</p>
+<h3 id="砥砺前行"><a href="#砥砺前行" class="headerlink" title="砥砺前行"></a>砥砺前行</h3><p>毕竟域名还是不够好记，我也因此有给这个网站写一个安卓app的想法，可以使用Android内置的webview，但更好的方案是用vuejs + cordova 大前端封装成app.（<em>再次挖一个更大的坑，送给自己</em>😭</p>
+
+	</div>
+	<div class="meta split">
+		
+		<time class="post-date" datetime="2018-01-22T04:56:23.000Z" itemprop="datePublished">2018-01-22</time>
+	</div>
+</article>
+
+<!--评论-->
+
+	
+<div class="ds-thread" data-thread-key="Blog的一些展望" data-title="Blog的一些展望" data-url="http://yoursite.com/2018/01/22/Blog的一些展望/"></div>
+<script type="text/javascript">
+
+var duoshuoQuery = {short_name:"yumemor"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+
+
+  
+</div>
+
+
+  <svg id="bigTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+    <path d="M0 0 L50 100 L100 0 Z"></path>
+  </svg>
+
+  
+
+
+  <div class="wrapper"></div>
+
+
+
+
+
+<div class="fat-footer">
+	<div class="wrapper">
+		<div class="layout layout--center">
+			<div class="layout__item palm-mb">
+				<div class="media">
+					<img class="headimg" src='https://ws1.sinaimg.cn/large/0072A1Xdly1fnjx7oxk06j31jk1jk4nj.jpg' alt='Shawn'>
+					<div class="media__body">
+						<h4>Shawn</h4>
+						<p class='site-description'>漂泊者及其影子</p>
+					</div>
+				</div>
+				<div class="author-contact">
+					<ul>
+						
+							
+							<li>
+				        		<a href="https://weibo.com/p/1005056451069819/home?from=page_100505&amp;mod=TAB&amp;is_all=1#place" target="_blank">
+				        			
+				        				<i class="iconfont icon-weibo"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+							
+							<li>
+				        		<a href="https://github.com/xc233" target="_blank">
+				        			
+				        				<i class="iconfont icon-github"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+							
+							<li>
+				        		<a href="https://www.zhihu.com/people/mo-ran-wei-ming-xi" target="_blank">
+				        			
+										<i class="iconfont icon-zhihu"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer" role="contentinfo">
+	<div class="wrapper wrapper--wide split split--responsive">
+		
+		<span>© 2018  Xiaochen ZHANG .	 Powered by <a href="http://hexo.io">Hexo</a></span>
+	</div>
+</footer>
+
+	<!-－这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
+	<!--<script src="http://lib.sinaapp.com/js/jquery/2.0/jquery.min.js"></script>-->
+	<script src="/js/lib.js"></script>
+	<script src="/js/google-code-prettify/prettify.js"></script>
+	<script src="/js/module.js"></script>
+	<script src="/js/script.js"></script>
+	
+	<script type='text/javascript'>
+		//代码高亮
+		$(document).ready(function(){
+	 		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+   			prettyPrint();
+		});
+	</script>
+	</body>
+</html>
