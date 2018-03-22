@@ -107,8 +107,7 @@ li {
   list-style: none;
 }
 a {
-  color: #666;
-  text-decoration: none;
+  text-decoration: underline;
 }
 abbr[title],
 dfn[title] {
@@ -403,7 +402,7 @@ h2.no-background span:after {
   }
 }
 article .post-title {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
   margin-bottom: 20px;
   position: relative;
@@ -411,7 +410,7 @@ article .post-title {
 article .post-title:after {
   content: '';
   border-top: 1px solid #eee;
-  width: 120px;
+  width: 200px;
   position: absolute;
   left: 0;
   bottom: -20px;
@@ -451,8 +450,8 @@ article .post-author a {
   margin: 30px 0 !important;
 }
 article .post-body p {
-  font-size: 15px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 37px;
   color: rgba(2,0,0,0.6);
 }
 article .post-body >:last-child {
@@ -463,7 +462,7 @@ article .post-body img {
   height: auto;
 }
 article .post-body p {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 article .post-body p + h1,
 article .post-body p + h2,
@@ -471,10 +470,10 @@ article .post-body p + h3,
 article .post-body p + h4,
 article .post-body p + h5,
 article .post-body p + h6 {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
-article .post-body h2 {
+article .post-body h1 {
   font-size: 30px;
   font-size: 1.875rem;
   line-height: 40px;
@@ -551,7 +550,7 @@ article .post-body blockquote {
   font-size: 18px;
   font-size: 1rem;
   line-height: 36px;
-  font-weight: 300;
+  font-weight: 300px;
   color: #aaa;
   padding-left: 55px;
   margin-bottom: 30px;
@@ -911,7 +910,7 @@ a[data-tooltip][data-placement="top"]::after {
   color: rgba(2,0,0,0.6);
 }
 .author-contact {
-  width: 20%;
+  width: 10%;
   display: inline-block;
   float: right;
   margin-top: -50px;
@@ -925,7 +924,7 @@ a[data-tooltip][data-placement="top"]::after {
 .author-contact ul li i {
   font-size: 35px;
   color: #888;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 @media screen and (min-width: 720px) {
   .footer {
