@@ -107,7 +107,8 @@ li {
   list-style: none;
 }
 a {
-  text-decoration: underline;
+  color: #666;
+  text-decoration: none;
 }
 abbr[title],
 dfn[title] {
@@ -208,7 +209,7 @@ header.scrolled #nav-toggle {
 .m-header .top-image {
   display: block;
   width: 100%;
-  padding-bottom: 550px;
+  padding-bottom: 80vh;
   background: center center/cover no-repeat;
 }
 .m-header #wave-canvas {
@@ -227,7 +228,7 @@ header.scrolled #nav-toggle {
   overflow: hidden;
 }
 .wrapper {
-  max-width: 800px;
+  max-width: 1024px;
   padding: 0 30px;
   margin-left: auto;
   margin-right: auto;
@@ -255,6 +256,8 @@ header.scrolled #nav-toggle {
 }
 .posts-list a {
   color: inherit;
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 .posts-list > li {
   list-style: none;
@@ -402,18 +405,18 @@ h2.no-background span:after {
   }
 }
 article .post-title {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   position: relative;
 }
 article .post-title:after {
   content: '';
-  border-top: 1px solid #eee;
-  width: 200px;
+  border-top: 2px LightGrey solid;
+  width: 100%;
   position: absolute;
   left: 0;
-  bottom: -20px;
+  bottom: -18px;
 }
 article .post-title a {
   font-size: 32px;
@@ -450,8 +453,8 @@ article .post-author a {
   margin: 30px 0 !important;
 }
 article .post-body p {
-  font-size: 16px;
-  line-height: 37px;
+  font-size: 18px;
+  line-height: 1.8;
   color: rgba(2,0,0,0.6);
 }
 article .post-body >:last-child {
@@ -462,7 +465,14 @@ article .post-body img {
   height: auto;
 }
 article .post-body p {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+article .post-body p a {
+  text-decoration: none;
+  color: #136ec2;
+}
+article .post-body p a:hover {
+  text-decoration: underline;
 }
 article .post-body p + h1,
 article .post-body p + h2,
@@ -470,26 +480,26 @@ article .post-body p + h3,
 article .post-body p + h4,
 article .post-body p + h5,
 article .post-body p + h6 {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 article .post-body h1 {
-  font-size: 30px;
+  font-size: 35px;
   font-size: 1.875rem;
   line-height: 40px;
 }
 article .post-body h2 {
-  font-size: 27px;
+  font-size: 30px;
   font-size: 1.6875rem;
   line-height: 37px;
 }
 article .post-body h3 {
   font-size: 20px;
   line-height: 34px;
-  color: #aaa;
+  color: #808080;
   display: table;
   white-space: nowrap;
-  border-spacing: 20px 0;
+  border-spacing: 10px 0;
 }
 article .post-body h3:before,
 article .post-body h3:after {
@@ -500,7 +510,7 @@ article .post-body h3:after {
   background: -moz-linear-gradient(#eee, #eee) repeat-x left center;
   background: -ms-linear-gradient(#eee, #eee) repeat-x left center;
   background: linear-gradient(#eee, #eee) repeat-x left center;
-  background-size: 1px 1px;
+  background-size: 1.5px 1.5px;
 }
 article .post-body h4 {
   font-size: 18px;
@@ -521,7 +531,7 @@ article .post-body ol {
 article .post-body ul li,
 article .post-body ol li {
   font-size: 15px;
-  padding: 10px 0 10px 25px;
+  padding: 1px 0 10px 25px;
   list-style-type: none;
 }
 article .post-body ul li:before,
@@ -530,12 +540,10 @@ article .post-body ol li:before {
   vertical-align: middle;
   margin-right: 10px;
   margin-left: -25px;
-  color: #ddd;
 }
 article .post-body ul li:before {
   color: #efefef;
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 15px;
   content: "\e60d";
   font-family: iconfont;
 }
@@ -550,8 +558,7 @@ article .post-body blockquote {
   font-size: 18px;
   font-size: 1rem;
   line-height: 36px;
-  font-weight: 300px;
-  color: #aaa;
+  font-weight: 300;
   padding-left: 55px;
   margin-bottom: 30px;
   position: relative;
@@ -563,10 +570,10 @@ article .post-body blockquote:before {
   font-size: 60px;
   font-size: 3.5rem;
   content: '\201C';
-  color: #ddd;
+  color: #808080;
   font-family: Georgia, "Times New Roman", Times, serif;
   position: absolute;
-  top: 15px;
+  top: 0px;
   left: 10px;
 }
 article table {
@@ -826,15 +833,15 @@ a[data-tooltip][data-placement="top"]::after {
   padding-top: 60px;
 }
 .fat-footer h4 {
-  font-size: 15px;
-  font-weight: normal;
+  font-size: 18px;
+  font-weight: bold;
   position: relative;
   margin-bottom: 30px;
 }
 .fat-footer h4:after {
   content: '';
   border-top: 3px solid #eee;
-  width: 30px;
+  width: 120px;
   position: absolute;
   bottom: -20px;
   left: 0;
@@ -851,9 +858,6 @@ a[data-tooltip][data-placement="top"]::after {
   vertical-align: top;
   width: 100%;
 }
-.layout__item>.media {
-  width: 80%;
-}
 .layout--force .layout__item {
   float: left;
 }
@@ -868,7 +872,7 @@ a[data-tooltip][data-placement="top"]::after {
   display: block;
 }
 .media__body {
-  width: 60%;
+  width: 80%;
   overflow: hidden;
   display: block;
 }
@@ -888,15 +892,6 @@ a[data-tooltip][data-placement="top"]::after {
   display: table;
   clear: both;
 }
-.media__body {
-  width: 60%;
-  overflow: hidden;
-  display: block;
-}
-.media__body,
-.media__body >:last-child {
-  margin-bottom: 0;
-}
 .headimg {
   width: 80px;
   height: 80px;
@@ -906,12 +901,13 @@ a[data-tooltip][data-placement="top"]::after {
 }
 .site-description {
   font-size: 15px;
+  font-weight: bold;
   line-height: 27px;
   color: rgba(2,0,0,0.6);
 }
 .author-contact {
-  width: 10%;
   display: inline-block;
+  visibility: hidden;
   float: right;
   margin-top: -50px;
 }
@@ -924,7 +920,7 @@ a[data-tooltip][data-placement="top"]::after {
 .author-contact ul li i {
   font-size: 35px;
   color: #888;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 @media screen and (min-width: 720px) {
   .footer {
@@ -970,11 +966,11 @@ a[data-tooltip][data-placement="top"]::after {
   text-align: right;
 }
 footer .wrapper {
-  max-width: 800px;
+  max-width: 1024px;
   padding: 0 30px;
   margin-left: auto;
   margin-right: auto;
 }
 footer .wrapper--wide {
-  max-width: 940px;
+  max-width: auto;
 }
