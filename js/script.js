@@ -26,7 +26,7 @@
  
             $('.js-search .text-input').keydown(function (event) {
                 if (event.keyCode == 13) {
-                    location.href = 'https://www.google.com/search?q=site:xc233.github.io ' + $(this).val();
+                    //location.href = 'https://www.google.com/search?q=site:xc.snaphouse.xin ' + $(this).val();
                     return false;
                 }
             })
@@ -88,9 +88,7 @@
 
         var bannerNode = $('.top-image');
         if(bannerNode.data('enable')){
-            var index = 4 ;
-            //bannerNode.attr('style','background-image:url(/banner/'+index+'.jpg)');
-            bannerNode.attr('style','background-image:url(https://ws1.sinaimg.cn/large/dd0c8f65ly1fp5gs10x87j21hc0u07fk.jpg)');
+            bannerNode.attr('style','background-image:url(https://ws1.sinaimg.cn/large/dd0c8f65ly1fplk0jszl7j21hc0u0wik.jpg)');
         }
     })
 
