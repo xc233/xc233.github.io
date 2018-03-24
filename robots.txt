@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: https://xc.snaphouse.xin/
+Disallow: https://xc233.github.io/
