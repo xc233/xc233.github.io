@@ -686,24 +686,34 @@ article .post-author a {
 article .post-body p {
   font-size: 18px;
   line-height: 1.8;
-  color: rgba(2,0,0,0.6);
 }
 article .post-body >:last-child {
   margin-bottom: 0;
 }
 article .post-body img {
+  display: block;
+  box-shadow: 0 0 10px #555;
+  border-radius: 6px;
   max-width: 100%;
+  margin: 10px auto;
   height: auto;
 }
 article .post-body p {
-  margin-bottom: 20px;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
 }
 article .post-body p a {
   text-decoration: none;
-  color: #136ec2;
+  color: #5c98a5;
 }
 article .post-body p a:hover {
   text-decoration: underline;
+  cursor: crosshair;
+  color: #930ee4;
+  background-color: #e9e7e7;
 }
 article .post-body p + h1,
 article .post-body p + h2,
@@ -725,23 +735,17 @@ article .post-body h2 {
   line-height: 37px;
 }
 article .post-body h3 {
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 30px;
   font-size: 20px;
-  line-height: 34px;
-  color: #808080;
-  display: table;
+  font-weight: 400;
+  line-height: 150%;
+  color: #666;
+  border-bottom: 1px LightGrey solid;
+  width: 98%;
   white-space: nowrap;
   border-spacing: 10px 0;
-}
-article .post-body h3:before,
-article .post-body h3:after {
-  content: "";
-  display: table-cell;
-  width: 50%;
-  background: -webkit-linear-gradient(#eee, #eee) repeat-x left center;
-  background: -moz-linear-gradient(#eee, #eee) repeat-x left center;
-  background: -ms-linear-gradient(#eee, #eee) repeat-x left center;
-  background: linear-gradient(#eee, #eee) repeat-x left center;
-  background-size: 1.5px 1.5px;
 }
 article .post-body h4 {
   font-size: 18px;
@@ -755,28 +759,22 @@ article .post-body h6 {
 article .post-body ul,
 article .post-body ol {
   font-size: 15px;
-  padding: 5px 20px;
+  padding: 0px 20px;
   list-style: none;
   border-radius: 3px;
 }
-article .post-body ul li,
+article .post-body ul li {
+  font-size: 15px;
+  padding: 0px 0 0px 0px;
+  list-style-type: none;
+  margin-left: 25px;
+  list-style-type: disc;
+}
 article .post-body ol li {
   font-size: 15px;
-  padding: 1px 0 10px 25px;
+  padding: 10px 0 10px 0px;
   list-style-type: none;
-}
-article .post-body ul li:before,
-article .post-body ol li:before {
-  float: left;
-  vertical-align: middle;
-  margin-right: 10px;
-  margin-left: -25px;
-}
-article .post-body ul li:before {
-  color: #efefef;
-  font-size: 15px;
-  content: "\e60d";
-  font-family: iconfont;
+  margin-left: 25px;
 }
 article .post-body ol {
   counter-reset: ol-counter;
