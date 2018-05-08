@@ -88,7 +88,7 @@
 
         var bannerNode = $('.top-image');
         if(bannerNode.data('enable')){
-            // bannerNode.attr('style','background-image:url(https://ws1.sinaimg.cn/large/dd0c8f65ly1fplk0jszl7j21hc0u0wik.jpg)');
+            // bannerNode.attr('style','background-image:url(https://ws1.sinaimg.cn/large/0072A1Xdly1fqnj9txjrsj31jk113dwt.jpg)');
             bannerNode.attr('style','background-image:url(https://ws1.sinaimg.cn/large/0072A1Xdly1fqnjcq2lrnj31221jkapq.jpg)');
         }
     })
