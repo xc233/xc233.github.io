@@ -125,7 +125,28 @@
 	</div>
 </article>
 
-<!--  -->
+
+	<section id="comments" style="margin:10px;padding:10px;background:#fff;">
+	  <div id="vcomment" class="comment"></div> 
+<script src="https://cdnjs.cat.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/js/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "khbNc5hbSD5FL5pRoKKwUNoW-gzGzoHsz",
+            app_key: "hXeyMSYoENmQRea17AAsVHHK",
+            placeholder: "来一起聊聊天吧ヾ(≧▽≦*)o",
+            avatar: "monsterid"
+    });
+</script>
+	</section>
+  
   
 
 
