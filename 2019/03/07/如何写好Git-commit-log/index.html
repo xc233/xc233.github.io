@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>如何写好Git commit log | YSSADX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+      <link rel="icon" href="/favicon1.png">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/js/google-code-prettify/atelier-forest-light.css">
+
+  </head>
+
+  <body>
+
+<header>
+	<a id="logo" href="/" title="YSSADX">
+	<img src="/favicon1.png" alt="YSSADX"></a>
+	
+	
+
+	
+		<!--侧边导航栏-->
+		<a id="nav-toggle" href="#"><span></span></a>
+
+<nav>
+	<div class="menu-top-container">
+		<ul id="menu-top" class="menu">
+			
+				
+				<li class="current-menu-item">
+					<a href="https://xc233.github.io/one/About%20me%20_%20OnionRipper.html" target="_blank">About Me</a>
+				</li>
+			
+				
+				<li class="current-menu-item">
+					<a href="https://github.com/xc233" target="_blank">Github</a>
+				</li>
+			
+				
+				<li class="current-menu-item">
+					<a href="atom.xml" target="_blank">RSS Feed</a>
+				</li>
+			
+			<li class="current-menu-item">
+				<a href="mailto:quantsleeper@gmail.com">E-mail</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+	
+
+</header>
+<div class="m-header ">
+	<section id="hero1" class="hero">
+		<div class="inner">
+		</div>
+	</section>
+	
+		<figure class="top-image" style='background-image: url(https://ws1.sinaimg.cn/large/dd0c8f65ly1g0ukmyxoxyj21hc0u0wmc.jpg)' data-enable=false></figure>
+	
+</div>
+
+<!--文章列表-->
+<div class="wrapper">
+  
+    <!--文章-->
+<article>
+	
+  
+    <h1 class="post-title" itemprop="name">
+      如何写好Git commit log
+    </h1>
+  
+
+	<div class='post-body mb'>
+		<p>Git每次提交代码时，都必须要写上 git -m “ 提交信息 “ ，否则就不允许提交。很多时候都没有注意过git log的规范，结果写个乱七八糟，根本就想不清楚做了哪些修改。本文是自己参照前辈们习得的一点git message习惯。</p>
+<h3 id="一条-commit-应有的信息结构"><a href="#一条-commit-应有的信息结构" class="headerlink" title="一条 commit 应有的信息结构"></a>一条 commit 应有的信息结构</h3><ul>
+<li>Type 类型</li>
+<li>Subject 目的</li>
+<li>Body 内容<h4 id="Type-类型"><a href="#Type-类型" class="headerlink" title="Type 类型"></a>Type 类型</h4>Type 分为：</li>
+<li>feat: 增加新功能；</li>
+<li>fix: 修复错误；</li>
+<li>docs: 修改文档；</li>
+<li>style: 修改样式；</li>
+<li>refactor: 代码重构；</li>
+<li>test: 增加测试模块，不涉及生产环境的代码；</li>
+<li>chore: 更新核心模块，包配置文件，不涉及生产环境的代码；</li>
+</ul>
+<h4 id="Subject-目的"><a href="#Subject-目的" class="headerlink" title="Subject 目的"></a>Subject 目的</h4><p>subject写本次commit的目的是什么，可省略。</p>
+<h4 id="Body-内容"><a href="#Body-内容" class="headerlink" title="Body 内容"></a>Body 内容</h4><p>body是本次commit的详细描述</p>
+<ul>
+<li>add 增加</li>
+<li>mod 修改</li>
+<li>del 删除</li>
+</ul>
+<h4 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h4><pre><code>git commit -m &quot;docs: add FAQ in readme file&quot;
+</code></pre><h4 id="进阶—–使用Emoji"><a href="#进阶—–使用Emoji" class="headerlink" title="进阶—–使用Emoji"></a>进阶—–使用Emoji</h4><pre><code>git commit -m &quot; :emoji1: :emoji2: 主题 &quot;
+</code></pre><p><a href="https://gitmoji.carloscuesta.me/" target="_blank" rel="noopener">GitEmoji使用规范</a></p>
+<p>最后，祝大家git -message 写的愉快！</p>
+
+	</div>
+	<div class="meta split">
+		
+		<span>EDIT by YSSADX</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<time class="post-date" datetime="2019-03-07T13:21:20.000Z" itemprop="datePublished">2019-03-07</time>
+	</div>
+</article>
+
+
+	<section id="comments" style="margin:10px;padding:10px;background:#fff;">
+	  <div id="vcomment" class="comment"></div> 
+<script src="https://cdnjs.cat.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/js/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "khbNc5hbSD5FL5pRoKKwUNoW-gzGzoHsz",
+            app_key: "hXeyMSYoENmQRea17AAsVHHK",
+            placeholder: "来一起聊聊天吧ヾ(≧▽≦*)o",
+            avatar: "monsterid"
+    });
+</script>
+	</section>
+  
+  
+
+
+  
+</div>
+
+
+  <svg id="bigTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+    <path d="M0 0 L50 100 L100 0 Z"></path>
+  </svg>
+
+  
+
+
+  <div class="wrapper"></div>
+
+
+
+
+
+<div class="fat-footer">
+	<div class="wrapper">
+		<div class="layout layout--center">
+			<div class="layout__item palm-mb">
+				<div class="media">
+					<img class="headimg" src='https://ws1.sinaimg.cn/large/dd0c8f65ly1fplkdrufl7j214014ak3o.jpg' alt='YSSADX'>
+					<div class="media__body">
+						<h4>YSSADX</h4>
+						<p class='site-description'>It is my heritage to stand erect, proud, and unafraid.</p>
+					</div>
+				</div>
+				<div class="author-contact">
+					<ul>
+						
+							
+							<li>
+				        		<a href="" target="_blank" style="text-decoration:none">
+				        			
+				        				<i class="iconfont icon-douban"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer" role="contentinfo">
+	<div class="wrapper wrapper--wide split split--responsive">
+		
+		<span>Hosted by <a style="font-weight: bold">Github Pages</a></span>
+		<span>| © 2018 <a style="font-weight:bold">YSSADX</a><!--	 Powered by <a href="http://hexo.io">Hexo</a> --></span>
+
+		
+	</div>
+</footer>
+
+	<!-－这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
+	<!--<script src="http://lib.sinaapp.com/js/jquery/2.0/jquery.min.js"></script>-->
+	<script src="/js/lib.js"></script>
+	<script src="/js/google-code-prettify/prettify.js"></script>
+	<script src="/js/module.js"></script>
+	<script src="/js/script.js"></script>
+	
+	<script type='text/javascript'>
+		//代码高亮
+		$(document).ready(function(){
+	 		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+   			prettyPrint();
+		});
+	</script>
+	</body>
+</html>

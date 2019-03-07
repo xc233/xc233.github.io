@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-20T13:16:49.102Z</updated>
+  <updated>2019-03-07T13:53:45.025Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何写好Git commit log</title>
+    <link href="http://yoursite.com/2019/03/07/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDGit-commit-log/"/>
+    <id>http://yoursite.com/2019/03/07/如何写好Git-commit-log/</id>
+    <published>2019-03-07T13:21:20.000Z</published>
+    <updated>2019-03-07T13:53:45.025Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>FlexBox布局笔记</title>
