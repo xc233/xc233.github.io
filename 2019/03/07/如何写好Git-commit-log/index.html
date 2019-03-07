@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     
-    <title>如何写好Git commit log | YSSADX</title>
+    <title>如何写好Git Commit Log | YSSADX</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     
@@ -62,7 +62,7 @@
 		</div>
 	</section>
 	
-		<figure class="top-image" style='background-image: url(https://ws1.sinaimg.cn/large/dd0c8f65ly1g0ukmyxoxyj21hc0u0wmc.jpg)' data-enable=false></figure>
+		<figure class="top-image" style='background-image: url(https://ws1.sinaimg.cn/large/dd0c8f65ly1g0ukvmfb7kj21hc0u0qgj.jpg)' data-enable=false></figure>
 	
 </div>
 
@@ -74,34 +74,52 @@
 	
   
     <h1 class="post-title" itemprop="name">
-      如何写好Git commit log
+      如何写好Git Commit Log
     </h1>
   
 
 	<div class='post-body mb'>
 		<p>Git每次提交代码时，都必须要写上 git -m “ 提交信息 “ ，否则就不允许提交。很多时候都没有注意过git log的规范，结果写个乱七八糟，根本就想不清楚做了哪些修改。本文是自己参照前辈们习得的一点git message习惯。</p>
 <h3 id="一条-commit-应有的信息结构"><a href="#一条-commit-应有的信息结构" class="headerlink" title="一条 commit 应有的信息结构"></a>一条 commit 应有的信息结构</h3><ul>
-<li>Type 类型</li>
-<li>Subject 目的</li>
-<li>Body 内容<h4 id="Type-类型"><a href="#Type-类型" class="headerlink" title="Type 类型"></a>Type 类型</h4>Type 分为：</li>
-<li>feat: 增加新功能；</li>
-<li>fix: 修复错误；</li>
-<li>docs: 修改文档；</li>
-<li>style: 修改样式；</li>
-<li>refactor: 代码重构；</li>
-<li>test: 增加测试模块，不涉及生产环境的代码；</li>
-<li>chore: 更新核心模块，包配置文件，不涉及生产环境的代码；</li>
+<li><p>Type 类型  </p>
+</li>
+<li><p>Subject 目的  </p>
+</li>
+<li><p>Body 内容  </p>
+</li>
 </ul>
-<h4 id="Subject-目的"><a href="#Subject-目的" class="headerlink" title="Subject 目的"></a>Subject 目的</h4><p>subject写本次commit的目的是什么，可省略。</p>
-<h4 id="Body-内容"><a href="#Body-内容" class="headerlink" title="Body 内容"></a>Body 内容</h4><p>body是本次commit的详细描述</p>
+<h3 id="Type-类型"><a href="#Type-类型" class="headerlink" title="Type 类型"></a>Type 类型</h3><p>Type 分为：</p>
 <ul>
-<li>add 增加</li>
-<li>mod 修改</li>
-<li>del 删除</li>
+<li><p>feat: 增加新功能；</p>
+</li>
+<li><p>fix: 修复错误；</p>
+</li>
+<li><p>docs: 修改文档；</p>
+</li>
+<li><p>style: 修改样式；</p>
+</li>
+<li><p>refactor: 代码重构；</p>
+</li>
+<li><p>test: 增加测试模块，不涉及生产环境的代码；</p>
+</li>
+<li><p>chore: 更新核心模块，包配置文件，不涉及生产环境的代码；</p>
+</li>
 </ul>
-<h4 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h4><pre><code>git commit -m &quot;docs: add FAQ in readme file&quot;
-</code></pre><h4 id="进阶—–使用Emoji"><a href="#进阶—–使用Emoji" class="headerlink" title="进阶—–使用Emoji"></a>进阶—–使用Emoji</h4><pre><code>git commit -m &quot; :emoji1: :emoji2: 主题 &quot;
-</code></pre><p><a href="https://gitmoji.carloscuesta.me/" target="_blank" rel="noopener">GitEmoji使用规范</a></p>
+<h3 id="Subject-目的"><a href="#Subject-目的" class="headerlink" title="Subject 目的"></a>Subject 目的</h3><p>subject写本次commit的目的是什么，可省略。</p>
+<h3 id="Body-内容"><a href="#Body-内容" class="headerlink" title="Body 内容"></a>Body 内容</h3><p>body是本次commit的详细描述</p>
+<ul>
+<li><p>add 增加</p>
+</li>
+<li><p>mod 修改</p>
+</li>
+<li><p>del 删除</p>
+</li>
+</ul>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><pre><code class="git">git commit -m &quot;docs: add FAQ in readme file&quot;
+// 文档修改：在 readme 文件里添加了 FAQ模块
+</code></pre>
+<h3 id="进阶—–使用Emoji"><a href="#进阶—–使用Emoji" class="headerlink" title="进阶—–使用Emoji"></a>进阶—–使用Emoji</h3><pre><code>git commit -m &quot; :emoji1: :emoji2: 主题 &quot;
+</code></pre><p><img src="https://ws1.sinaimg.cn/large/dd0c8f65ly1g0uktt4evvj21ow12e47m.jpg" alt=""><br>附：<a href="https://gitmoji.carloscuesta.me/" target="_blank" rel="noopener">GitEmoji使用规范</a></p>
 <p>最后，祝大家git -message 写的愉快！</p>
 
 	</div>
