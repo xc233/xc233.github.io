@@ -1,85 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    
-    <title>如何写好Git Commit Log | YSSADX</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    
-      <link rel="icon" href="/favicon1.png">
-    
-
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <title>Scatterbrain</title>
     <link rel="stylesheet" href="/css/style.css">
-
-    <link rel="stylesheet" href="/js/google-code-prettify/atelier-forest-light.css">
-
   </head>
-
   <body>
-
-<header>
-	<a id="logo" href="/" title="YSSADX">
-	<img src="/favicon1.png" alt="YSSADX"></a>
-	
-	
-
-	
-		<!--侧边导航栏-->
-		<a id="nav-toggle" href="#"><span></span></a>
-
-<nav>
-	<div class="menu-top-container">
-		<ul id="menu-top" class="menu">
-			
-				
-				<li class="current-menu-item">
-					<a href="https://xc233.github.io/one/About%20me%20_%20OnionRipper.html" target="_blank">About Me</a>
-				</li>
-			
-				
-				<li class="current-menu-item">
-					<a href="https://github.com/xc233" target="_blank">Github</a>
-				</li>
-			
-				
-				<li class="current-menu-item">
-					<a href="atom.xml" target="_blank">RSS Feed</a>
-				</li>
-			
-			<li class="current-menu-item">
-				<a href="mailto:quantsleeper@gmail.com">E-mail</a>
-			</li>
-		</ul>
-	</div>
-</nav>
-	
-
-</header>
-<div class="m-header ">
-	<section id="hero1" class="hero">
-		<div class="inner">
-		</div>
-	</section>
-	
-		<figure class="top-image" style='background-image: url(https://ws1.sinaimg.cn/large/dd0c8f65ly1g0ukvmfb7kj21hc0u0qgj.jpg)' data-enable=false></figure>
-	
-</div>
-
-<!--文章列表-->
-<div class="wrapper">
-  
-    <!--文章-->
-<article>
-	
-  
-    <h1 class="post-title" itemprop="name">
-      如何写好Git Commit Log
-    </h1>
-  
-
-	<div class='post-body mb'>
-		<p>Git每次提交代码时，都必须要写上 git -m “ 提交信息 “ ，否则就不允许提交。很多时候都没有注意过git log的规范，结果写个乱七八糟，根本就想不清楚做了哪些修改。本文是自己参照前辈们习得的一点git message习惯。</p>
+    
+    <main class="main">
+      <article class="main-content">
+    <div class="post-title">
+      <h1 class="title">如何写好Git Commit Log</h1>
+    </div>
+     <!-- <div class="post-meta">
+      <span class="post-time">2019-03-07</span>
+    </div> -->
+    <div class="post-content">
+      <p>Git每次提交代码时，都必须要写上 git -m “ 提交信息 “ ，否则就不允许提交。很多时候都没有注意过git log的规范，结果写个乱七八糟，根本就想不清楚做了哪些修改。本文是自己参照前辈们习得的一点git message习惯。</p>
 <h3 id="一条-commit-应有的信息结构"><a href="#一条-commit-应有的信息结构" class="headerlink" title="一条 commit 应有的信息结构"></a>一条 commit 应有的信息结构</h3><ul>
 <li><p>Type 类型  </p>
 </li>
@@ -119,112 +58,17 @@
 // 文档修改：在 readme 文件里添加了 FAQ模块
 </code></pre>
 <h3 id="进阶—–使用Emoji"><a href="#进阶—–使用Emoji" class="headerlink" title="进阶—–使用Emoji"></a>进阶—–使用Emoji</h3><pre><code>git commit -m &quot; :emoji1: :emoji2: 主题 &quot;
-</code></pre><p>附：<a href="https://gitmoji.carloscuesta.me/" target="_blank" rel="noopener">GitEmoji使用规范</a><br><img src="https://ws1.sinaimg.cn/large/dd0c8f65ly1g0uktt4evvj21ow12e47m.jpg" alt=""></p>
+</code></pre><p>附：<a href="http://gitmoji.carloscuesta.me/" target="_blank" rel="noopener">GitEmoji使用规范</a><br><img src="http://ws1.sinaimg.cn/large/dd0c8f65ly1g0uktt4evvj21ow12e47m.jpg" alt=""></p>
 <p>最后，祝大家git -message 写的愉快！</p>
 
-	</div>
-	<div class="meta split">
-		
-		<span>EDIT by YSSADX</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<time class="post-date" datetime="2019-03-07T13:21:20.000Z" itemprop="datePublished">2019-03-07</time>
-	</div>
+    </div>
 </article>
-
-
-	<section id="comments" style="margin:10px;padding:10px;background:#fff;">
-	  <div id="vcomment" class="comment"></div> 
-<script src="https://cdnjs.cat.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="/js/Valine.min.js"></script>
-<script>
-   var notify = 'false' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-   new Valine({
-            av: AV,
-            el: '#vcomment',
-            notify: notify,
-            verify: verify,
-            app_id: "khbNc5hbSD5FL5pRoKKwUNoW-gzGzoHsz",
-            app_key: "hXeyMSYoENmQRea17AAsVHHK",
-            placeholder: "来一起聊聊天吧ヾ(≧▽≦*)o",
-            avatar: "monsterid"
-    });
-</script>
-	</section>
-  
-  
-
-
-  
-</div>
-
-
-  <svg id="bigTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
-    <path d="M0 0 L50 100 L100 0 Z"></path>
-  </svg>
-
-  
-
-
-  <div class="wrapper"></div>
-
-
-
-
-
-<div class="fat-footer">
-	<div class="wrapper">
-		<div class="layout layout--center">
-			<div class="layout__item palm-mb">
-				<div class="media">
-					<img class="headimg" src='https://ws1.sinaimg.cn/large/dd0c8f65ly1fplkdrufl7j214014ak3o.jpg' alt='YSSADX'>
-					<div class="media__body">
-						<h4>YSSADX</h4>
-						<p class='site-description'>It is my heritage to stand erect, proud, and unafraid.</p>
-					</div>
-				</div>
-				<div class="author-contact">
-					<ul>
-						
-							
-							<li>
-				        		<a href="" target="_blank" style="text-decoration:none">
-				        			
-				        				<i class="iconfont icon-douban"></i>
-				        			
-				        		</a>
-				        	</li>
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<footer class="footer" role="contentinfo">
-	<div class="wrapper wrapper--wide split split--responsive">
-		
-		<span>Hosted by <a style="font-weight: bold">Github Pages</a></span>
-		<span>| © 2018 <a style="font-weight:bold">YSSADX</a><!--	 Powered by <a href="http://hexo.io">Hexo</a> --></span>
-
-		
-	</div>
+    </main>
+    <footer class="site-footer">
+  <div class="site-footer-inner">
+    <span class="site-footer-owner">© 2020 <a href="https://github.com/xc233"> Sean Zhang </a></span>
+    <!-- <span class="site-footer-credits">Host by GitHub Pages</a>.</span> -->
+  </div>
 </footer>
-
-	<!-－这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
-	<!--<script src="http://lib.sinaapp.com/js/jquery/2.0/jquery.min.js"></script>-->
-	<script src="/js/lib.js"></script>
-	<script src="/js/google-code-prettify/prettify.js"></script>
-	<script src="/js/module.js"></script>
-	<script src="/js/script.js"></script>
-	
-	<script type='text/javascript'>
-		//代码高亮
-		$(document).ready(function(){
-	 		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
-   			prettyPrint();
-		});
-	</script>
-	</body>
+  </body>
 </html>

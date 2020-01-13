@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>YSSADX</title>
+  <title>Scatterbrain</title>
   
-  
+  <subtitle>Today Matters &amp; Black and White Evergreen</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-07T14:08:50.841Z</updated>
+  <updated>2020-01-13T13:30:02.287Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>YSSADX</name>
+    <name>Sean Zhang</name>
     
   </author>
   
@@ -21,16 +21,16 @@
     <link href="http://yoursite.com/2019/03/07/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BDGit-commit-log/"/>
     <id>http://yoursite.com/2019/03/07/如何写好Git-commit-log/</id>
     <published>2019-03-07T13:21:20.000Z</published>
-    <updated>2019-03-07T14:08:50.841Z</updated>
+    <updated>2020-01-13T13:30:02.287Z</updated>
+    
+    <content type="html"><![CDATA[<p>Git每次提交代码时，都必须要写上 git -m “ 提交信息 “ ，否则就不允许提交。很多时候都没有注意过git log的规范，结果写个乱七八糟，根本就想不清楚做了哪些修改。本文是自己参照前辈们习得的一点git message习惯。</p><h3 id="一条-commit-应有的信息结构"><a href="#一条-commit-应有的信息结构" class="headerlink" title="一条 commit 应有的信息结构"></a>一条 commit 应有的信息结构</h3><ul><li><p>Type 类型  </p></li><li><p>Subject 目的  </p></li><li><p>Body 内容  </p></li></ul><h3 id="Type-类型"><a href="#Type-类型" class="headerlink" title="Type 类型"></a>Type 类型</h3><p>Type 分为：</p><ul><li><p>feat: 增加新功能；</p></li><li><p>fix: 修复错误；</p></li><li><p>docs: 修改文档；</p></li><li><p>style: 修改样式；</p></li><li><p>refactor: 代码重构；</p></li><li><p>test: 增加测试模块，不涉及生产环境的代码；</p></li><li><p>chore: 更新核心模块，包配置文件，不涉及生产环境的代码；</p></li></ul><h3 id="Subject-目的"><a href="#Subject-目的" class="headerlink" title="Subject 目的"></a>Subject 目的</h3><p>subject写本次commit的目的是什么，可省略。</p><h3 id="Body-内容"><a href="#Body-内容" class="headerlink" title="Body 内容"></a>Body 内容</h3><p>body是本次commit的详细描述</p><ul><li><p>add 增加</p></li><li><p>mod 修改</p></li><li><p>del 删除</p></li></ul><h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><pre><code class="git">git commit -m &quot;docs: add FAQ in readme file&quot;// 文档修改：在 readme 文件里添加了 FAQ模块</code></pre><h3 id="进阶—–使用Emoji"><a href="#进阶—–使用Emoji" class="headerlink" title="进阶—–使用Emoji"></a>进阶—–使用Emoji</h3><pre><code>git commit -m &quot; :emoji1: :emoji2: 主题 &quot;</code></pre><p>附：<a href="http://gitmoji.carloscuesta.me/" target="_blank" rel="noopener">GitEmoji使用规范</a><br><img src="http://ws1.sinaimg.cn/large/dd0c8f65ly1g0uktt4evvj21ow12e47m.jpg" alt=""></p><p>最后，祝大家git -message 写的愉快！</p>]]></content>
     
     <summary type="html">
     
       
       
-        
-        
-          
-        
+        &lt;p&gt;Git每次提交代码时，都必须要写上 git -m “ 提交信息 “ ，否则就不允许提交。很多时候都没有注意过git log的规范，结果写个乱七八糟，根本就想不清楚做了哪些修改。本文是自己参照前辈们习得的一点git message习惯。&lt;/p&gt;
+&lt;h3 id=&quot;一条-comm
       
     
     </summary>
@@ -45,14 +45,14 @@
     <published>2019-02-20T12:51:43.000Z</published>
     <updated>2019-02-20T13:16:49.102Z</updated>
     
+    <content type="html"><![CDATA[<p>本文参照<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener">阮一峰老师博客</a></p><h2 id="一、-Flex布局基本概念"><a href="#一、-Flex布局基本概念" class="headerlink" title="一、 Flex布局基本概念"></a>一、 Flex布局基本概念</h2><h3 id="1-使用flexbox"><a href="#1-使用flexbox" class="headerlink" title="1. 使用flexbox"></a>1. 使用flexbox</h3><pre><code>display:flex;</code></pre><h3 id="2-flex轴线"><a href="#2-flex轴线" class="headerlink" title="2. flex轴线"></a>2. flex轴线</h3><p>flex容器默认存在两根轴，水平的主轴和垂直的交叉轴。<br><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png" alt=""></p><h2 id="二、容器的属性"><a href="#二、容器的属性" class="headerlink" title="二、容器的属性"></a>二、容器的属性</h2><pre><code>flex-directionflex-wrapjustify-contentalign-itemsalign-content</code></pre><h3 id="1-flex-direction"><a href="#1-flex-direction" class="headerlink" title="1.flex-direction"></a>1.flex-direction</h3><p>决定主轴方向，有如下四个值：</p><ol><li>row<br>主轴水平方向，起点在左端</li><li>row-reverse<br>主轴水平方向，起点在右端</li><li>coloum<br>主轴垂直方向，起点在上端</li><li>coloum-reverse<br>主轴垂直方向，起点在下端  </li></ol><h3 id="2-flex-wrap"><a href="#2-flex-wrap" class="headerlink" title="2.flex-wrap"></a>2.flex-wrap</h3><p>flex-wrap决定当一行放不下时，如何进行换行，有三个值：</p><ol><li>nowrap<br>不换行</li><li>wrap<br>换行，第一行在上方</li><li>wrap-reverse<br>换行，第一行在下方  </li></ol><h3 id="3-justify-content"><a href="#3-justify-content" class="headerlink" title="3.justify-content"></a>3.justify-content</h3><p>定义了项目在主轴上的对齐方式</p><ol><li>flex-start<br>左对齐</li><li>flex-end<br>右对齐</li><li>center<br>居中对齐</li><li>space-between<br>两端对齐，项目间距相等</li><li>space-around<br>每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。  </li></ol><p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071010.png" alt="">  </p><h3 id="4-align-items"><a href="#4-align-items" class="headerlink" title="4.align-items"></a>4.align-items</h3><p>定义项目在交叉轴如何对齐</p><ol><li>flex-start<br>交叉轴起点对齐</li><li>flex-end<br>交叉轴终点对齐</li><li>center<br>交叉轴中点对齐</li><li>baseline<br>项目第一行文字基线对齐</li><li>stretch(默认值)<br>如果项目未设置高度或设为auto，将占满整个容器的高度  </li></ol><p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071011.png" alt=""></p><h3 id="5-align-content"><a href="#5-align-content" class="headerlink" title="5.align-content"></a>5.align-content</h3><p>定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</p><ol><li>flex-start<br>与交叉轴的起点对齐。</li><li>flex-end<br>与交叉轴的终点对齐。</li><li>center<br>与交叉轴的中点对齐。</li><li>space-between<br>与交叉轴两端对齐，轴线之间的间隔平均分布。</li><li>space-around<br>每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。</li><li>stretch（默认值）<br>轴线占满整个交叉轴。</li></ol><p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071012.png" alt=""></p><h2 id="三、项目的属性"><a href="#三、项目的属性" class="headerlink" title="三、项目的属性"></a>三、项目的属性</h2><pre><code>orderflex-growflex-shrinkflex-basisflexalign-self</code></pre><h3 id="1-order"><a href="#1-order" class="headerlink" title="1. order"></a>1. order</h3><p>order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。<br><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071013.png" alt="">   </p><h3 id="2-flex-grow"><a href="#2-flex-grow" class="headerlink" title="2. flex-grow"></a>2. flex-grow</h3><p>flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。  </p><h3 id="3-flex-shrink"><a href="#3-flex-shrink" class="headerlink" title="3. flex-shrink"></a>3. flex-shrink</h3><p>flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。  </p><h3 id="4-flex-basis"><a href="#4-flex-basis" class="headerlink" title="4. flex-basis"></a>4. flex-basis</h3><p>flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。  </p><h3 id="5-flex"><a href="#5-flex" class="headerlink" title="5.flex"></a>5.flex</h3><p>flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。  </p><h3 id="6-align-self"><a href="#6-align-self" class="headerlink" title="6. align-self"></a>6. align-self</h3><p>align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。</p>]]></content>
+    
     <summary type="html">
     
       
       
-        
-        
-          
-        
+        &lt;p&gt;本文参照&lt;a href=&quot;http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;阮一峰老师博客&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;一、-Flex布局基本
       
     
     </summary>
@@ -65,16 +65,15 @@
     <link href="http://yoursite.com/2018/05/09/%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E7%99%BE%E5%BA%A6%E4%BA%91%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%AE%A2%E6%88%B7%E7%AB%AF/"/>
     <id>http://yoursite.com/2018/05/09/一个非常好用的百度云命令行客户端/</id>
     <published>2018-05-09T06:02:32.000Z</published>
-    <updated>2018-05-25T14:52:01.131Z</updated>
+    <updated>2020-01-13T13:30:32.255Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近一边在学习Nodejs，一边在准备考研。周围很多准备考研的同学并不写代码，也不会写代码。他们将考研奉为一切，破釜沉舟，考不上就二战。在我看来这种心态非常危险，考研不是不就业的借口，一个大学本科专业课程学习了四年，到毕业最后连本行业的基本技能要求都达不到，实在是令人唏嘘不已。 </p><p>但我依然祝福这些孤独的勇士，祝你们能够考上心仪的大学，踏实做事永远是值得尊敬的。</p><h3 id="分享一个好用的百度云客户端"><a href="#分享一个好用的百度云客户端" class="headerlink" title="分享一个好用的百度云客户端"></a>分享一个好用的百度云客户端</h3><p>不得不说，国内的云盘相继倒下之后，唯剩下百度云盘可以使用。但是百度云客户端限速的比较厉害，开了会员也不能满速下载，这就很不舒服了。无论是考研视频、编程资料、电影美剧，于我而言都离不开百度云。近日呢，在GitHub上看到了作者iikira开源出了一个用Go语言写出来的<a href="https://github.com/iikira/BaiduPCS-Go" target="_blank" rel="noopener">百度云命令行客户端</a>，亲测使用下来非常高效。  </p><ul><li>技能需求：会使用命令行工具。  </li><li>Doc：<a href="https://github.com/iikira/BaiduPCS-Go" target="_blank" rel="noopener">文档</a>  </li></ul><p><img src="http://ws1.sinaimg.cn/large/0072A1Xdly1fr52bn3tsdj30sy0qcabs.jpg" alt=""></p><h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><ul><li>登录百度帐号</li></ul><pre><code>BaiduPCS-Go login</code></pre><ul><li>退出当前登录的百度帐号</li></ul><pre><code>BaiduPCS-Go logout</code></pre><ul><li>切换工作目录</li></ul><pre><code>BaiduPCS-Go cd &lt;目录&gt;------------------------------#官方example#切换 /我的资源 工作目录BaiduPCS-Go cd /我的资源------------------------------#切换 上级目录BaiduPCS-Go cd ..------------------------------#切换 根目录BaiduPCS-Go cd /------------------------------#切换 /我的资源 工作目录, 并自动列出 /我的资源 下的文件和目录BaiduPCS-Go cd -l 我的资源------------------------------#使用通配符BaiduPCS-Go cd /我的*</code></pre><ul><li>输出工作目录</li></ul><pre><code>BaiduPCS-Go pwd</code></pre><ul><li>列出目录</li></ul><pre><code>BaiduPCS-Go ls</code></pre><ul><li>下载文件/目录 </li></ul><pre><code>BaiduPCS-Go download &lt;网盘文件或目录的路径1&gt; &lt;文件或目录2&gt; &lt;文件或目录3&gt; ...BaiduPCS-Go d &lt;网盘文件或目录的路径1&gt; &lt;文件或目录2&gt; &lt;文件或目录3&gt; ...  ------------------------------------------------------------#例子#设置保存目录, 保存到 D:\Downloads#注意区别反斜杠 &quot;\&quot; 和 斜杠 &quot;/&quot; !!!BaiduPCS-Go config set -savedir D:/Downloads  ------------------------------------------------------------#下载 /我的资源/1.mp4BaiduPCS-Go d /我的资源/1.mp4  ------------------------------------------------------------#下载 /我的资源 整个目录!!BaiduPCS-Go d /我的资源  ------------------------------------------------------------#下载网盘内的全部文件!!BaiduPCS-Go d /BaiduPCS-Go d *</code></pre><p>以上这些命令就已经足够基本使用了，更多的功能需求还是移步Doc吧。</p><h3 id="当然，还可以再简单一些"><a href="#当然，还可以再简单一些" class="headerlink" title="当然，还可以再简单一些"></a>当然，还可以再简单一些</h3><p>在环境变量的path里添加：BaiduPCS-GO的系统目录<br><img src="http://ws1.sinaimg.cn/large/0072A1Xdly1fr52pq9ulzj30f10fudgm.jpg" alt=""></p><p>然后 WIN + R 输入cmd 打开命令行窗口，输入BaiduPCS-GO就可以直接执行程序了！</p><p><img src="http://ws1.sinaimg.cn/large/0072A1Xdly1fr52sqy6uhj30rx0f74qp.jpg" alt=""></p>]]></content>
     
     <summary type="html">
     
       
       
-        
-        
-          
-        
+        &lt;p&gt;最近一边在学习Nodejs，一边在准备考研。周围很多准备考研的同学并不写代码，也不会写代码。他们将考研奉为一切，破釜沉舟，考不上就二战。在我看来这种心态非常危险，考研不是不就业的借口，一个大学本科专业课程学习了四年，到毕业最后连本行业的基本技能要求都达不到，实在是令人唏嘘不
       
     
     </summary>
@@ -89,14 +88,13 @@
     <published>2018-04-29T01:53:50.000Z</published>
     <updated>2018-05-25T14:52:31.670Z</updated>
     
+    <content type="html"><![CDATA[<p>ES6的发布也已经有几年时间了，本文是我自己学习Nodejs的一点笔记，更深入的学习可以查看阮一峰老师的开源书籍——<a href="http://es6.ruanyifeng.com/" target="_blank" rel="noopener">《ECMAScript 6 入门》</a>。</p><h3 id="Let-与-Const"><a href="#Let-与-Const" class="headerlink" title="Let 与 Const"></a>Let 与 Const</h3><p>Let是ES6中新增的命令，用法类似于Var。但Let声明的变量不存在预解析</p><pre><code class="Javascript">console.log(num);//预解析var num = 123;// return : 123</code></pre><pre><code class="js">console.log(num);let num = 123;//ReferenceError: num is not defined</code></pre><p> es6引入了块级作用域，let声明的变量在块级作用域有效</p><pre><code class="Javascript">{    let str = &quot;hello&quot;;}console.log(str);  //ReferenceError: str is not defined</code></pre><pre><code class="Javascript"> for(let i = 0;i &lt; 3; i++){    console.log(i); // return : 0 1 2}console.log(i); //ReferenceError: i is not defined</code></pre><p>暂时性死区 ：只要块级作用域内存在let命令，它所声明的变量就“绑定”（binding）这个区域，不再受外部的影响。在块级作用域内，声明let之前给tmp赋值都会报错。</p><pre><code class="Javascript">var tmp = 123;if (true) {  tmp = &#39;abc&#39;; // ReferenceError  let tmp;}</code></pre><p>同一个作用内，let不可以声明重名的变量 </p><pre><code class="js">let a = 3;let a = 4;//SyntaxError: Identifier &#39;a&#39; has already been declared</code></pre><p>const变量不能重新赋值，必须在声明的时候进行初始化</p><pre><code class="JS">const abc = 456;abc = 123;console.log(abc);//TypeError: Assignment to constant variable.</code></pre><h3 id="变量的解构赋值"><a href="#变量的解构赋值" class="headerlink" title="变量的解构赋值"></a>变量的解构赋值</h3><p>原来的赋值方法：</p><pre><code class="js">var a = 4, b = 5, c = 6;console.log(a,b,c);</code></pre><p>数组的解构赋值</p><pre><code class="js">let [a,b,c] = [123,456,789];let [a,,c] = [123,789]let [a,[num,abc],c] = [123,[111,123],789];//解构赋值内部支持嵌套let [a=1,b,c] = [,123,456];</code></pre><p>Example：交换x和y的值</p><pre><code class="js">let [x,y] = [1,2];[x,y] = [y,x];console.log(x,y);</code></pre><p>对象的解构赋值</p><pre><code class="js">let {name:username,age}={name:&#39;zhangsan&#39;,age:12};let {name:username=&#39;lisi&#39;,age}={age:12};</code></pre><pre><code class="js">var obj = {    name : &#39;zhangsan&#39;,    age : 13,    friend : {        fname : &#39;lisi&#39;,        sex : &#39;male&#39;    }};let {name,age,friend} = obj;console.log(name,age,friend.fname,friend.sex);</code></pre><p>字符串解构赋值</p><pre><code class="js">let [a,b,c,d,e,f,length] = &#39;hello&#39;;console.log(a,b,c,d,e,f,length);//这种方法不能输出length--------------------------------console.log(&#39;hello&#39;.length);let {length:l} = &#39;hello&#39;;console.log(l);</code></pre><h3 id="字符串扩展"><a href="#字符串扩展" class="headerlink" title="字符串扩展"></a>字符串扩展</h3><p>includes()   判断字符串中是否包含特定的字串</p><pre><code class="js">let str = &#39;Hello world&#39;;console.log(str.includes(&#39;world&#39;,7))</code></pre><p>startWith()  判断字符串是否以特定的字符串开始<br>endsWith()   判断字符串是否以特定的字符串结束</p><pre><code class="js">let url = &#39;admin/index.php&#39;;console.log(url.startsWith(&#39;index&#39;,6))console.log(url.endsWith(&#39;.html&#39;))</code></pre><p>模板字符串</p><pre><code class="js">var tag = `    &lt;div&gt;        &lt;span&gt;${data.name}&lt;/span&gt;        &lt;span&gt;${data.age}&lt;/span&gt;        &lt;span&gt;${1+1}&lt;/span&gt;        &lt;span&gt;${foo(&#39;nihao&#39;)}&lt;/span&gt;    &lt;/div&gt;`;console.log(tag);</code></pre><h3 id="函数扩展"><a href="#函数扩展" class="headerlink" title="函数扩展"></a>函数扩展</h3><p>rest 参数</p><pre><code class="js">function foo(a,...rest){    console.log(a);    console.log(rest);}foo(1,2,3,4,5,6);// return ：1// return ：[ 2, 3, 4, 5, 6 ]</code></pre><p>扩展运算符 …</p><pre><code class="js">let arr = [1,2,3,4,5,6];function foo (a,b,c,d,e){    console.log(a,b,c,d,e);}foo(...arr);//...作用就是把数组转成单个的数据项//也可以使用apply函数foo.apply(null,arr);//apply作用就是把数组或者类数组转成单个的数据项</code></pre><p>Example:数组的合并</p><pre><code class="js">let arr1 = [&#39;red&#39;,&#39;green&#39;];let arr2 = [&#39;blue&#39;,&#39;orange&#39;,&#39;yellow&#39;];let arr = [...arr1,...arr2];console.log(arr);</code></pre><p>箭头函数</p><pre><code class="js">let foo = value =&gt; value;let ret = foo(456);console.log(ret);</code></pre><p>注意事项   </p><ol><li>函数中的this是声明时的对象，不是调用时的对象<pre><code class="js">function foo(){setTimeout(() =&gt; {    console.log(this.num);},100)}let num = 1;foo.call({num:2});</code></pre></li><li>箭头函数不可以new，也就是说它不是构造函数<pre><code class="js">let foo =()=&gt;{};new foo();</code></pre></li><li>函数内部不可以使用arguments，可以使用rest参数替代<pre><code class="js">let foo = (a,b) =&gt;{console.log(a,b);console.log(arguments[0]);}foo(12,13);</code></pre></li></ol><h3 id="类（本质上就是构造函数）"><a href="#类（本质上就是构造函数）" class="headerlink" title="类（本质上就是构造函数）"></a>类（本质上就是构造函数）</h3><p>类的基本用法</p><pre><code class="js">class Person{    constructor(sex,weight){        this.sex = sex;        this.weight = weight;    }    showWeight(){        console.log(&#39;weight:&#39;+this.weight);    }    showSex(){        console.log(&#39;sex:&#39;+this.sex);    }}let p = new Person(&#39;female&#39;,&#39;75kg&#39;);p.showSex();p.showWeight();</code></pre><p>继承 extends </p><pre><code class="js">class Student extends Person{    constructor(sex,weight,score){        super(sex,weight);//调用父类的构造函数,这个步骤是必须的        this.score = score;    }    showScore(){        console.log(&#39;score:&#39;+this.score);    }}let stu = new Student(&#39;male&#39;,&#39;70kg&#39;,&#39;100&#39;);stu.showScore();stu.showSex();stu.showWeight();Student.showInfo();</code></pre><h3 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h3><p>这就是个人的一点笔记，用于开发查询时使用，写的比较仓促，不适合作为教程学习。感谢阅读。</p>]]></content>
+    
     <summary type="html">
     
       
       
-        
-        
-          
-        
+        &lt;p&gt;ES6的发布也已经有几年时间了，本文是我自己学习Nodejs的一点笔记，更深入的学习可以查看阮一峰老师的开源书籍——&lt;a href=&quot;http://es6.ruanyifeng.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《ECMAScript
       
     
     </summary>
@@ -109,16 +107,16 @@
     <link href="http://yoursite.com/2018/03/22/%E4%B8%80%E6%AC%A1%E6%84%89%E5%BF%AB%E7%9A%84%E5%9B%BE%E4%B9%A6%E9%A6%86%E6%8A%A2%E5%AD%98%E5%8C%85%E6%9F%9C/"/>
     <id>http://yoursite.com/2018/03/22/一次愉快的图书馆抢存包柜/</id>
     <published>2018-03-22T05:50:08.000Z</published>
-    <updated>2018-05-25T14:58:57.382Z</updated>
+    <updated>2020-01-13T13:30:13.672Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ws1.sinaimg.cn/large/dd0c8f65ly1fplju10fezj20it0hyt9j.jpg" alt=""><br>抢到了图书馆存包的柜子，当然是要好好学习啦！</p>]]></content>
     
     <summary type="html">
     
       
       
-        
-        
-          
-        
+        &lt;p&gt;&lt;img src=&quot;http://ws1.sinaimg.cn/large/dd0c8f65ly1fplju10fezj20it0hyt9j.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;抢到了图书馆存包的柜子，当然是要好好学习啦！&lt;/p&gt;
+
       
     
     </summary>
@@ -131,16 +129,16 @@
     <link href="http://yoursite.com/2018/03/05/%E8%AE%B0%E4%B8%80%E6%AC%A1%E4%B9%B0%E7%94%B5%E8%84%91%E7%BF%BB%E8%BD%A6/"/>
     <id>http://yoursite.com/2018/03/05/记一次买电脑翻车/</id>
     <published>2018-03-05T03:38:49.000Z</published>
-    <updated>2019-02-25T03:36:06.884Z</updated>
+    <updated>2020-01-13T13:31:00.274Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>老电脑Thinkpad E460 大一入学时候购买的，用了两年多。家里的老台式机2G内存没有固态装满了各种各样的卫士，看个电视剧都卡。寒暑假做家教赚了些外快，过年的时候家长各种暗示我换台新笔记本，老电脑给她们用，于是就开始了我的默默寻觅新电脑…</p></blockquote><h3 id="当我们谈论买电脑时-我们在谈些什么"><a href="#当我们谈论买电脑时-我们在谈些什么" class="headerlink" title="当我们谈论买电脑时 我们在谈些什么"></a>当我们谈论买电脑时 我们在谈些什么</h3><p>买电脑？我们要考虑哪些方面？</p><ol><li>性能</li><li>便携</li><li>信仰</li><li>价格</li></ol><p>我是一个计算机专业学生，常用的软件也就是VS Code / Vusial Studio ，目前性能要求最多的也就是Matlab了，Intel 8 Gen 的低压U完全够我使用，但我希望TDP（热设计功耗）能稳定在15W。内存需要8G起步，内存板载也没什么大不了。屏幕一定是要72%NTSC色域的1080P高分屏，偶尔会做一些ps修图。平时不玩游戏，独立显卡完全不需要，多一个MX150反而会增加耗电。  </p><p>由于我会经常背着电脑去图书馆、教室等地自习，对便携性是有需求的，因此重量要在1.5kg以下，屏幕大小13.3寸最优。寝室里还有一台19寸显示器，并不会因屏幕小影响打代码。  </p><p>坦白讲，我并不是什么品牌的忠实粉丝，我购买任何产品是因为它确切的符合我的需求，不会因为情怀而一时兴起捧回了家。我会惊叹优秀的工业设计，也会欣赏简单高效的人机交互，所谓的逼格骄傲光环，都不过是场烟云罢了。  </p><p>价格是我格外在意的事情，我的预算只有￥7500，「三千预算进卡吧，三万电脑抱回家」加钱？无止境的。</p><h3 id="钱少逼事儿多-怎么选电脑"><a href="#钱少逼事儿多-怎么选电脑" class="headerlink" title="钱少逼事儿多 怎么选电脑"></a>钱少逼事儿多 怎么选电脑</h3><p>不考虑价格的前提，有这么几台笔记本:  </p><ul><li><p>联想IdeaPad 720s<br>这是一台没有短板的水桶机，重量1.1kg，PCIE x 4 的雷电3接口。可惜性能调教略保守，TDP只给了10w的功耗。  </p></li><li><p>Dell xps 13<br>除了雷电3是2倍的PCIE，没什么大问题。虽然模具用了3年，但外观放在2018年依然不落俗套。这一代的戴尔性能调教非常彪悍，TDP给到了20w，基本持平于i5-7300HQ。  </p></li><li><p>新 Dell xps 13<br>2018年新上市的xps，目前只有白色版本，性能调教更加偏激，功耗稳定在23~25w，这就是i7-7700HQ的默频状态。因为做的轻薄砍掉了usb接口，只有type-c接口，需要购买转接器。  </p></li><li><p>Thinkpad X1 carbon<br>键盘手感绝佳，最大的缺点就是贵。16G内存高配价格更是贵的惊人。美帝良心想国内外差价巨大。  </p></li><li><p>Macbook Pro (无touchbar版本)<br>Mac OS 终端很棒。第二代蝶式键盘手感不适合长时间使用。Retina屏幕惊艳，素质极高。贵。</p></li></ul><h3 id="你说我能怎么办吧"><a href="#你说我能怎么办吧" class="headerlink" title="你说我能怎么办吧"></a>你说我能怎么办吧</h3><p>最终，在符合我的预算范围内，狗东下单了老模具的xps13 （i5-8250U 8+256），等了3天的快递终于到货。满心欢喜的拆包裹，插电，开机，一气呵成。  </p><p>？？？屏幕居然没亮？再按？还不亮？又按？仍是不亮。。。  </p><p>给戴尔售后打电话，800开头的全是空号，吓得我以为dell在大中华区要跑路了。400的打通了，简短交流后认为我这台电脑属于主板短路，JD退货。退货又用了6天。。。</p><h3 id="如果我什么都改变不了-那就任它去吧"><a href="#如果我什么都改变不了-那就任它去吧" class="headerlink" title="如果我什么都改变不了 那就任它去吧"></a>如果我什么都改变不了 那就任它去吧</h3><p>去小米之家看了看小米pro和小米Air 13.3新版本，室友的小米pro高负载情景下塑料风扇会过热变形，只能售后换新。全新的13.3 Air 由于加入了一块8w的MX150，cpu的性能释放被限制在了10w的TDP。<br>既然这样，继续攒钱，攒够了买Macbook Pro或者 Thinkpad X1 Carbon。  </p><p>其实还是很不错的学习环境 ：）</p><p><img src="http://ws1.sinaimg.cn/large/dd0c8f65ly1fp5g6x03g7j23402c04qq.jpg" alt=""></p>]]></content>
     
     <summary type="html">
     
       
       
-        
-        
-          
-        
+        &lt;blockquote&gt;
+&lt;p&gt;老电脑Thinkpad E460 大一入学时候购买的，用了两年多。家里的老台式机2G内存没有固态装满了各种各样的卫士，看个电视剧都卡。寒暑假做家教赚了些外快，过年的时候家长各种暗示我换台新笔记本，老电脑给她们用，于是就开始了我的默默寻觅新电脑…&lt;/
       
     
     </summary>
@@ -153,16 +151,16 @@
     <link href="http://yoursite.com/2018/01/22/Blog%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B1%95%E6%9C%9B/"/>
     <id>http://yoursite.com/2018/01/22/Blog的一些展望/</id>
     <published>2018-01-22T04:56:23.000Z</published>
-    <updated>2019-02-20T12:02:25.633Z</updated>
+    <updated>2020-01-13T13:30:40.270Z</updated>
+    
+    <content type="html"><![CDATA[<p>Blog搭建好也有一周了，这一周，经历了各种各样的测试，算是勉强完成？下面就谈一谈我踩的坑和接下来要维护&amp;开发的工作。</p><h3 id="Host-平台"><a href="#Host-平台" class="headerlink" title="Host 平台"></a>Host 平台</h3><p>起初采用了github pages + Hexo 搭建的Blog，但经同学们帮忙测试，github并不是很稳定，经常会出现加载慢、加载不出来的情况。迫不得己，只好去寻找一个更优的解决方案。采用了「中国版的Github」 <a href="https://coding.net/" target="_blank" rel="noopener"><em>Coding Pages</em></a>   进行托管，后台管理的界面风格有待熟悉，但加载网页真的是快多了（围笑）。同样支持域名绑定，但是绑定域名后必须要等5s的广告才能跳转到Blog。还好官方提供了解决办法：在blog的最底部引入了 Coding.net 要求的外链，审核通过可取消跳转等待广告。</p><p>注：现已换回Github Pages托管</p><h3 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h3><p>之前购买过阿里云的服务器，在这方面算是轻车熟路了。原本是想买 xc233.cn 的域名，一年价格不算贵，但是在中国大陆使用的话就必须要去工信部备案，否则DNS服务器是无法解析成功的。备案正经要走一套流程，还要不少时间，sad…室友之前总叫嚷着让我和他一起写电子产品评测，索性直接要了一个二级域名：xc.snaphouse.xin 省心又省力，舒服~  </p><p>By the way，给snappium的snaphouse做个硬广：欢迎大家访问 <a href="http://www.snaphouse.xin" target="_blank" rel="noopener">www.snaphouse.xin</a> 网站，一起围观他填补不了的大坑（hhh…</p><h3 id="Hexo-Theme"><a href="#Hexo-Theme" class="headerlink" title="Hexo Theme"></a>Hexo Theme</h3><p>hexo的官网上有很多主题，可我为什么偏偏就选中了这个主题呢？  </p><p>当然是因为：<strong>好看啦！</strong>  </p><p>可以很坦诚的说，看过了所有的hexo官网里的主题，就这个瞅着最喜欢。  </p><p>但是这个单纯的好看，就给我自己挖下了一个大坑（😭😭😭</p><h4 id="经短暂的使用，发现有如下几个问题"><a href="#经短暂的使用，发现有如下几个问题" class="headerlink" title="经短暂的使用，发现有如下几个问题"></a><strong>经短暂的使用，发现有如下几个问题</strong></h4><ul><li>主题并没有 归档 / 关于 等相关按钮</li><li>每篇文章没有Tag标签，无法按照Tag分类</li><li>首页的sidebar就是个摆设，没有实现导航的功能</li><li>自带的 <strong>多说</strong> 评论已经停止服务，评论功能失效</li><li>搜索功能是通过 google:site 搜索引擎命令完成的，google大家伙自然是上不去的，卵用？？？</li></ul><h4 id="可以拓展的功能-优化的细节"><a href="#可以拓展的功能-优化的细节" class="headerlink" title="可以拓展的功能/优化的细节"></a><strong>可以拓展的功能/优化的细节</strong></h4><ul><li>RSS订阅</li><li>文章内部加入一件返回顶部的Button</li><li>文章内部的超链接样式加入下划线 Or 颜色提示，更容易分辨</li></ul><p>作为一个骄傲的完美主义者，这些问题我自然是忍不了的。在接下来很长的一段时间里，我会亲自着手去改善这些不完美的地方。</p><h3 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h3><p>在多说已经停止服务后，几个类似功能的产品也相继倒下。  </p><p>可是，Blog 没有评论功能多平庸啊（程序员不要子的么？？？  </p><h4 id="有如下几个方案"><a href="#有如下几个方案" class="headerlink" title="有如下几个方案"></a><strong>有如下几个方案</strong></h4><ul><li>discuss</li><li>valine</li><li>来必力</li><li>有言 / 畅言 </li><li>Gitment / Gitalk</li></ul><p>discuss是全球最大的第三方评论插件，但是GFW的原因，用不了，GG。  </p><p>有言 / 畅言 功能差不多,但是别哪天再停止服务了，毕竟日子都不好过。  </p><p>Gitment / Gitalk 基于Github Issue 实现的评论功能，可除了程序员还谁会有github account 呢？ 受众面太窄。  </p><p>来必力是韩国的一个评论插件，本土化做的不错，可万一哪天报个 오류（ERROR）的错误，我该怎么办呢？  </p><p>最终，就剩下valine了，<del>等测试好了就加上。（给自己挖坑）</del></p><h3 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h3><p>由于本博客刚刚搭建不久，也没什么特别优秀的文章，所以网站暂时并未于Google Or Baidu 收录。<br>请放心，也许会迟到，但绝不会缺席。</p><h3 id="砥砺前行"><a href="#砥砺前行" class="headerlink" title="砥砺前行"></a>砥砺前行</h3><p>域名还是不够好记（<em>再次挖一个更大的坑，送给自己</em>😭</p>]]></content>
     
     <summary type="html">
     
       
       
-        
-        
-          
-        
+        &lt;p&gt;Blog搭建好也有一周了，这一周，经历了各种各样的测试，算是勉强完成？下面就谈一谈我踩的坑和接下来要维护&amp;amp;开发的工作。&lt;/p&gt;
+&lt;h3 id=&quot;Host-平台&quot;&gt;&lt;a href=&quot;#Host-平台&quot; class=&quot;headerlink&quot; title=&quot;Host 平台
       
     
     </summary>
@@ -177,14 +175,13 @@
     <published>2018-01-15T03:59:00.000Z</published>
     <updated>2018-05-08T02:53:51.452Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>之前购买了阿里云服务器，用HTML5+CSS+JS搭建了个人博客，但瓶颈在于服务器只有1M带宽，加载一张较大的图片都要好半天，于是便放弃了自己搭Blog的想法。某一天偶然看到Github Pages + Hexo可以搭建Blog，而且不限带宽，遂重启这一计划。</p><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><h4 id="Win-OS-下需配置"><a href="#Win-OS-下需配置" class="headerlink" title="Win OS 下需配置"></a>Win OS 下需配置</h4><blockquote><p>   Git<br>   Nodejs<br>   Hexo<br>   需要注册Github</p></blockquote><h3 id="搭建Nodejs开发环境"><a href="#搭建Nodejs开发环境" class="headerlink" title="搭建Nodejs开发环境"></a>搭建Nodejs开发环境</h3><p>&emsp;&emsp;&emsp;进入<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener"><em>Node官方网站</em></a>，下载安装对应版本</p><h3 id="搭建Git"><a href="#搭建Git" class="headerlink" title="搭建Git"></a>搭建Git</h3><p>&emsp;&emsp;&emsp;进入<a href="https://git-scm.com/download/win" target="_blank" rel="noopener"><em>Git官方网站</em></a>，下载安装对应版本</p><h3 id="Hexo环境配置"><a href="#Hexo环境配置" class="headerlink" title="Hexo环境配置"></a>Hexo环境配置</h3><h4 id="一、Hexo安装"><a href="#一、Hexo安装" class="headerlink" title="一、Hexo安装"></a>一、Hexo安装</h4><p>找一个开发文件夹，鼠标右键 Git Bash Here<br><img src="https://ws1.sinaimg.cn/large/0072A1Xdly1fnjfje00slj306e0aet8t.jpg" alt=""><br><img src="https://ws1.sinaimg.cn/large/0072A1Xdly1fnjfjsnb32j30gj095gli.jpg" alt=""><br>输入npm命令即可安装</p><pre><code class="bash">npm install hexo-cli -g    npm install hexo-deployer-git --save</code></pre><p>第一句是安装hexo，第二句是安装hexo部署到git page的deployer，两个都需要安装。</p><h4 id="二、Hexo初始化"><a href="#二、Hexo初始化" class="headerlink" title="二、Hexo初始化"></a>二、Hexo初始化</h4><p>安装完成后，新建目录（我用的是C:\Blog\Hexo），进入C:\Blog\Hexo文件夹下鼠标右键，点击Git Bash Here，进入Git命令框，执行以下操作。</p><pre><code>hexo init</code></pre><p>建立完成后会创建如下文件目录<br><img src="http://ww1.sinaimg.cn/large/0072A1Xdly1fnjfkap044j30kz0anmxq.jpg" alt=""><br>继续执行以下语句</p><pre><code>hexo generatehexo server</code></pre><p>此时，打开浏览器，进入</p><pre><code>localhost:4000</code></pre><p>即可看到本地效果<br>Hexo配置完成</p><h2 id="将hexo渲染的博客部署到GitHub-Pages上"><a href="#将hexo渲染的博客部署到GitHub-Pages上" class="headerlink" title="将hexo渲染的博客部署到GitHub Pages上"></a>将hexo渲染的博客部署到GitHub Pages上</h2><h4 id="一、注册Github账户"><a href="#一、注册Github账户" class="headerlink" title="一、注册Github账户"></a>一、注册Github账户</h4><ol><li>访问<a href="https://github.com/" target="_blank" rel="noopener"><em>Github</em></a>首页</li><li>点击Sign up注册</li></ol><h4 id="二、创建Repository"><a href="#二、创建Repository" class="headerlink" title="二、创建Repository"></a>二、创建Repository</h4><p>注册完成后，点击New Repository<br><img src="https://ws1.sinaimg.cn/large/0072A1Xdly1fnjflajs7bj30np0hdmya.jpg" alt=""></p><h4 id="三、配置ssh密钥"><a href="#三、配置ssh密钥" class="headerlink" title="三、配置ssh密钥"></a>三、配置ssh密钥</h4><h5 id="第一步、检查本机是否存在密钥"><a href="#第一步、检查本机是否存在密钥" class="headerlink" title="第一步、检查本机是否存在密钥"></a>第一步、检查本机是否存在密钥</h5><p>桌面打开Git Bash Here,输入</p><pre><code>$ cd ~/. ssh</code></pre><h5 id="第二步、创建ssh密钥"><a href="#第二步、创建ssh密钥" class="headerlink" title="第二步、创建ssh密钥"></a>第二步、创建ssh密钥</h5><p>输入:</p><pre><code>$ssh-keygen -t rsa -C &quot;your_email@example.com&quot;#这将按照你提供的邮箱地址，创建一对密钥Generating public/private rsa key pair.Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]</code></pre><p>可以不需要设置密码，直接按回车就可以，直到结束。</p><h5 id="第三步、在GitHub账户中添加你的公钥"><a href="#第三步、在GitHub账户中添加你的公钥" class="headerlink" title="第三步、在GitHub账户中添加你的公钥"></a>第三步、在GitHub账户中添加你的公钥</h5><p>运行如下命令</p><pre><code>clip &lt; ~/.ssh/id_rsa.pub</code></pre><ol><li>登陆你的github，进入 Settings<br><img src="https://ws1.sinaimg.cn/large/0072A1Xdly1fnjflobs3qj304w06uq2t.jpg" alt=""></li><li>选择SSH and GPR keys<br><img src="https://ws1.sinaimg.cn/large/0072A1Xdly1fnjfm5dn0zj306q0ft74g.jpg" alt=""></li><li>直接粘贴 添加即可<br><img src="https://ws1.sinaimg.cn/large/0072A1Xdly1fnjfmdpduzj30mh0cx0sy.jpg" alt=""></li></ol><h5 id="第四步、测试"><a href="#第四步、测试" class="headerlink" title="第四步、测试"></a>第四步、测试</h5><p>输入下面的命令，git@github.com的部分不要修改：</p><pre><code class="bash">$ ssh -T git@github.com</code></pre><p>输入yes，反馈如下，代表成功。<br><img src="https://ws1.sinaimg.cn/large/0072A1Xdly1fnjfmscqpjj30g508wdg0.jpg" alt="">)</p><h4 id="四、将本地的Hexo文件push到Github仓库中"><a href="#四、将本地的Hexo文件push到Github仓库中" class="headerlink" title="四、将本地的Hexo文件push到Github仓库中"></a>四、将本地的Hexo文件push到Github仓库中</h4><h5 id="第一步、登录Github打开自己的项目-username-github-io"><a href="#第一步、登录Github打开自己的项目-username-github-io" class="headerlink" title="第一步、登录Github打开自己的项目 username.github.io"></a>第一步、登录Github打开自己的项目 username.github.io</h5><p><img src="https://ws1.sinaimg.cn/large/0072A1Xdly1fnjfn0uowaj309m08ejrf.jpg" alt=""></p><h5 id="第二步、打开之后，点击SSH，选择SSH类型地址"><a href="#第二步、打开之后，点击SSH，选择SSH类型地址" class="headerlink" title="第二步、打开之后，点击SSH，选择SSH类型地址"></a>第二步、打开之后，点击SSH，选择SSH类型地址</h5><p><img src="https://ws1.sinaimg.cn/large/0072A1Xdly1fnjfnag8cwj30d307lmxg.jpg" alt=""></p><h5 id="第三步、复制地址"><a href="#第三步、复制地址" class="headerlink" title="第三步、复制地址"></a>第三步、复制地址</h5><h5 id="第四步、打开你一开始创建的Hexo文件夹（如C-Blog-Hexo），用记事本打开刚文件夹下的-config-yml文件"><a href="#第四步、打开你一开始创建的Hexo文件夹（如C-Blog-Hexo），用记事本打开刚文件夹下的-config-yml文件" class="headerlink" title="第四步、打开你一开始创建的Hexo文件夹（如C:\Blog\Hexo），用记事本打开刚文件夹下的_config.yml文件"></a>第四步、打开你一开始创建的Hexo文件夹（如C:\Blog\Hexo），用记事本打开刚文件夹下的_config.yml文件</h5><p><img src="http://ww1.sinaimg.cn/large/0072A1Xdly1fnjfkap044j30kz0anmxq.jpg" alt=""></p><h5 id="第五步、在配置文件里作如下修改，保存"><a href="#第五步、在配置文件里作如下修改，保存" class="headerlink" title="第五步、在配置文件里作如下修改，保存"></a>第五步、在配置文件里作如下修改，保存</h5><p><img src="https://ws1.sinaimg.cn/large/0072A1Xdly1fnjfnmojerj30ep04bt8x.jpg" alt=""></p><h5 id="第六步、在Hexo文件夹下执行："><a href="#第六步、在Hexo文件夹下执行：" class="headerlink" title="第六步、在Hexo文件夹下执行："></a>第六步、在Hexo文件夹下执行：</h5><pre><code>hexo g -d</code></pre><p>假如这时候，报错 ERROR Deployer not found: git，那么就是你的deployer没有安装成功，你需要执行如下命令再安装一次：</p><pre><code>npm install hexo-deployer-git --save</code></pre><p>这样，你再执行hexo g -d，你的博客就部署到Github上了。</p><h5 id="第七步、在浏览器上输入自己的主页地址"><a href="#第七步、在浏览器上输入自己的主页地址" class="headerlink" title="第七步、在浏览器上输入自己的主页地址"></a>第七步、在浏览器上输入自己的主页地址</h5><p>在浏览器上输入 yourname.github.io (比如我的是xc233.github.io)<br><img src="https://ws1.sinaimg.cn/large/0072A1Xdly1fnjfnvxqe3j308a00zmwy.jpg" alt=""><br>即可访问自己的Blog网页了！</p><h3 id="封面来源"><a href="#封面来源" class="headerlink" title="封面来源"></a>封面来源</h3><center>一个听说banner要漂亮文章才有人看ヾ(≧▽≦*)o</center>]]></content>
+    
     <summary type="html">
     
       
       
-        
-        
-          
-        
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;之前购买了阿里云服务器，用HTML5+CSS+JS搭建了个人博客，但瓶颈在于服务器只有1M带宽，加载一张较大的图片都要好半天，于是便放弃了自
       
     
     </summary>
@@ -199,14 +196,13 @@
     <published>2018-01-09T16:00:00.000Z</published>
     <updated>2018-03-22T16:13:12.092Z</updated>
     
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
     <summary type="html">
     
       
       
-        
-        
-          
-        
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
       
     
     </summary>

@@ -1,85 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    
-    <title>FlexBox布局笔记 | YSSADX</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    
-      <link rel="icon" href="/favicon1.png">
-    
-
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <title>Scatterbrain</title>
     <link rel="stylesheet" href="/css/style.css">
-
-    <link rel="stylesheet" href="/js/google-code-prettify/atelier-forest-light.css">
-
   </head>
-
   <body>
-
-<header>
-	<a id="logo" href="/" title="YSSADX">
-	<img src="/favicon1.png" alt="YSSADX"></a>
-	
-	
-
-	
-		<!--侧边导航栏-->
-		<a id="nav-toggle" href="#"><span></span></a>
-
-<nav>
-	<div class="menu-top-container">
-		<ul id="menu-top" class="menu">
-			
-				
-				<li class="current-menu-item">
-					<a href="https://xc233.github.io/one/About%20me%20_%20OnionRipper.html" target="_blank">About Me</a>
-				</li>
-			
-				
-				<li class="current-menu-item">
-					<a href="https://github.com/xc233" target="_blank">Github</a>
-				</li>
-			
-				
-				<li class="current-menu-item">
-					<a href="atom.xml" target="_blank">RSS Feed</a>
-				</li>
-			
-			<li class="current-menu-item">
-				<a href="mailto:quantsleeper@gmail.com">E-mail</a>
-			</li>
-		</ul>
-	</div>
-</nav>
-	
-
-</header>
-<div class="m-header ">
-	<section id="hero1" class="hero">
-		<div class="inner">
-		</div>
-	</section>
-	
-		<figure class="top-image" style='background-image: url(https://ws1.sinaimg.cn/large/dd0c8f65ly1g0d6mruk9hj21hc0u0tct.jpg)' data-enable=false></figure>
-	
-</div>
-
-<!--文章列表-->
-<div class="wrapper">
-  
-    <!--文章-->
-<article>
-	
-  
-    <h1 class="post-title" itemprop="name">
-      FlexBox布局笔记
-    </h1>
-  
-
-	<div class='post-body mb'>
-		<p>本文参照<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener">阮一峰老师博客</a></p>
+    
+    <main class="main">
+      <article class="main-content">
+    <div class="post-title">
+      <h1 class="title">FlexBox布局笔记</h1>
+    </div>
+     <!-- <div class="post-meta">
+      <span class="post-time">2019-02-20</span>
+    </div> -->
+    <div class="post-content">
+      <p>本文参照<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener">阮一峰老师博客</a></p>
 <h2 id="一、-Flex布局基本概念"><a href="#一、-Flex布局基本概念" class="headerlink" title="一、 Flex布局基本概念"></a>一、 Flex布局基本概念</h2><h3 id="1-使用flexbox"><a href="#1-使用flexbox" class="headerlink" title="1. 使用flexbox"></a>1. 使用flexbox</h3><pre><code>display:flex;
 </code></pre><h3 id="2-flex轴线"><a href="#2-flex轴线" class="headerlink" title="2. flex轴线"></a>2. flex轴线</h3><p>flex容器默认存在两根轴，水平的主轴和垂直的交叉轴。<br><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png" alt=""></p>
 <h2 id="二、容器的属性"><a href="#二、容器的属性" class="headerlink" title="二、容器的属性"></a>二、容器的属性</h2><pre><code>flex-direction
@@ -141,109 +80,14 @@ align-self
 <h3 id="5-flex"><a href="#5-flex" class="headerlink" title="5.flex"></a>5.flex</h3><p>flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。  </p>
 <h3 id="6-align-self"><a href="#6-align-self" class="headerlink" title="6. align-self"></a>6. align-self</h3><p>align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。</p>
 
-	</div>
-	<div class="meta split">
-		
-		<span>EDIT by YSSADX</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<time class="post-date" datetime="2019-02-20T12:51:43.000Z" itemprop="datePublished">2019-02-20</time>
-	</div>
+    </div>
 </article>
-
-
-	<section id="comments" style="margin:10px;padding:10px;background:#fff;">
-	  <div id="vcomment" class="comment"></div> 
-<script src="https://cdnjs.cat.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="/js/Valine.min.js"></script>
-<script>
-   var notify = 'false' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-   new Valine({
-            av: AV,
-            el: '#vcomment',
-            notify: notify,
-            verify: verify,
-            app_id: "khbNc5hbSD5FL5pRoKKwUNoW-gzGzoHsz",
-            app_key: "hXeyMSYoENmQRea17AAsVHHK",
-            placeholder: "来一起聊聊天吧ヾ(≧▽≦*)o",
-            avatar: "monsterid"
-    });
-</script>
-	</section>
-  
-  
-
-
-  
-</div>
-
-
-  <svg id="bigTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
-    <path d="M0 0 L50 100 L100 0 Z"></path>
-  </svg>
-
-  
-
-
-  <div class="wrapper"></div>
-
-
-
-
-
-<div class="fat-footer">
-	<div class="wrapper">
-		<div class="layout layout--center">
-			<div class="layout__item palm-mb">
-				<div class="media">
-					<img class="headimg" src='https://ws1.sinaimg.cn/large/dd0c8f65ly1fplkdrufl7j214014ak3o.jpg' alt='YSSADX'>
-					<div class="media__body">
-						<h4>YSSADX</h4>
-						<p class='site-description'>It is my heritage to stand erect, proud, and unafraid.</p>
-					</div>
-				</div>
-				<div class="author-contact">
-					<ul>
-						
-							
-							<li>
-				        		<a href="" target="_blank" style="text-decoration:none">
-				        			
-				        				<i class="iconfont icon-douban"></i>
-				        			
-				        		</a>
-				        	</li>
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<footer class="footer" role="contentinfo">
-	<div class="wrapper wrapper--wide split split--responsive">
-		
-		<span>Hosted by <a style="font-weight: bold">Github Pages</a></span>
-		<span>| © 2018 <a style="font-weight:bold">YSSADX</a><!--	 Powered by <a href="http://hexo.io">Hexo</a> --></span>
-
-		
-	</div>
+    </main>
+    <footer class="site-footer">
+  <div class="site-footer-inner">
+    <span class="site-footer-owner">© 2020 <a href="https://github.com/xc233"> Sean Zhang </a></span>
+    <!-- <span class="site-footer-credits">Host by GitHub Pages</a>.</span> -->
+  </div>
 </footer>
-
-	<!-－这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
-	<!--<script src="http://lib.sinaapp.com/js/jquery/2.0/jquery.min.js"></script>-->
-	<script src="/js/lib.js"></script>
-	<script src="/js/google-code-prettify/prettify.js"></script>
-	<script src="/js/module.js"></script>
-	<script src="/js/script.js"></script>
-	
-	<script type='text/javascript'>
-		//代码高亮
-		$(document).ready(function(){
-	 		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
-   			prettyPrint();
-		});
-	</script>
-	</body>
+  </body>
 </html>
