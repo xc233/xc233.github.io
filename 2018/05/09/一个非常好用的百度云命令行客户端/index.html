@@ -4,7 +4,10 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <title>Scatterbrain</title>
+    <title>Xc.Zhang 的博客</title>
+    
+      <link rel="icon" href="/favicon.png">
+    
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
@@ -26,62 +29,58 @@
 <li>Doc：<a href="https://github.com/iikira/BaiduPCS-Go" target="_blank" rel="noopener">文档</a>  </li>
 </ul>
 <h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><ul>
-<li>登录百度帐号</li>
-</ul>
+<li><p>登录百度帐号</p>
 <pre><code>BaiduPCS-Go login
-</code></pre><ul>
-<li>退出当前登录的百度帐号</li>
-</ul>
+</code></pre></li>
+<li><p>退出当前登录的百度帐号</p>
 <pre><code>BaiduPCS-Go logout
-</code></pre><ul>
-<li>切换工作目录</li>
-</ul>
+</code></pre></li>
+<li><p>切换工作目录</p>
 <pre><code>BaiduPCS-Go cd &lt;目录&gt;
-------------------------------
+==============================
 #官方example
 #切换 /我的资源 工作目录
 BaiduPCS-Go cd /我的资源
-------------------------------
+==============================
 #切换 上级目录
 BaiduPCS-Go cd ..
-------------------------------
+==============================
 #切换 根目录
 BaiduPCS-Go cd /
-------------------------------
+==============================
 #切换 /我的资源 工作目录, 并自动列出 /我的资源 下的文件和目录
 BaiduPCS-Go cd -l 我的资源
-------------------------------
+==============================
 #使用通配符
 BaiduPCS-Go cd /我的*
-</code></pre><ul>
-<li>输出工作目录</li>
-</ul>
+</code></pre></li>
+<li><p>输出工作目录</p>
 <pre><code>BaiduPCS-Go pwd
-</code></pre><ul>
-<li>列出目录</li>
-</ul>
+</code></pre></li>
+<li><p>列出目录</p>
 <pre><code>BaiduPCS-Go ls
-</code></pre><ul>
-<li>下载文件/目录 </li>
-</ul>
+</code></pre></li>
+<li><p>下载文件/目录 </p>
 <pre><code>BaiduPCS-Go download &lt;网盘文件或目录的路径1&gt; &lt;文件或目录2&gt; &lt;文件或目录3&gt; ...
 BaiduPCS-Go d &lt;网盘文件或目录的路径1&gt; &lt;文件或目录2&gt; &lt;文件或目录3&gt; ...  
-------------------------------------------------------------
+============================================================
 #例子
 #设置保存目录, 保存到 D:\Downloads
 #注意区别反斜杠 &quot;\&quot; 和 斜杠 &quot;/&quot; !!!
 BaiduPCS-Go config set -savedir D:/Downloads  
-------------------------------------------------------------
+============================================================
 #下载 /我的资源/1.mp4
 BaiduPCS-Go d /我的资源/1.mp4  
-------------------------------------------------------------
+============================================================
 #下载 /我的资源 整个目录!!
 BaiduPCS-Go d /我的资源  
-------------------------------------------------------------
+============================================================
 #下载网盘内的全部文件!!
 BaiduPCS-Go d /
 BaiduPCS-Go d *
-</code></pre><p>以上这些命令就已经足够基本使用了，更多的功能需求还是移步Doc吧。</p>
+</code></pre></li>
+</ul>
+<p>以上这些命令就已经足够基本使用了，更多的功能需求还是移步Doc吧。</p>
 <h3 id="当然，还可以再简单一些"><a href="#当然，还可以再简单一些" class="headerlink" title="当然，还可以再简单一些"></a>当然，还可以再简单一些</h3><p>在环境变量的path里添加：BaiduPCS-GO的系统目录  </p>
 <p>然后 WIN + R 输入cmd 打开命令行窗口，输入BaiduPCS-GO就可以直接执行程序了！</p>
 
@@ -90,7 +89,7 @@ BaiduPCS-Go d *
     </main>
     <footer class="site-footer">
   <div class="site-footer-inner">
-    <span class="site-footer-owner">© 2020 <a href="https://github.com/xc233"> Sean Zhang </a></span>
+    <span class="site-footer-owner">© 2020 <a href="https://github.com/xc233"> Shawn Zhang </a></span>
     <!-- <span class="site-footer-credits">Host by GitHub Pages</a>.</span> -->
   </div>
 </footer>
