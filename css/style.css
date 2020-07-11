@@ -7,7 +7,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.87;
-  color: #333; }
+  color: #444; }
 
 a {
   color: #1e6bb8;
@@ -16,7 +16,6 @@ a {
     text-decoration: underline; }
 
 .page-header {
-  background-color: #159957;
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #fff), linear-gradient(70deg, #dbedff 32%, #ebfff0); }
   .page-header .page-header-content {
     color: #fff;
@@ -112,14 +111,21 @@ a {
 .header {
   min-height: 54px; }
   .header .site-header {
-    padding: 0px 15px;
-    display: flex;
-    justify-content: space-between; }
+    padding: 0px 30px;
+    display: flex; }
+    @media screen and (min-width: 64em) {
+      .header .site-header {
+        justify-content: flex-end; } }
+    @media screen and (min-width: 42em) and (max-width: 64em) {
+      .header .site-header {
+        justify-content: flex-end; } }
+    @media screen and (max-width: 42em) {
+      .header .site-header {
+        justify-content: space-between; } }
     .header .site-header .blog-title .logo {
       color: rgba(27, 31, 35, 0.85);
-      font-size: 22.4px;
+      font-size: 16px;
       line-height: 54px;
-      font-weight: 300;
       text-decoration: none; }
     .header .site-header .menu {
       margin: 0;
@@ -160,7 +166,12 @@ a {
     border-radius: 6px;
     max-width: 100%;
     margin-top: 1rem; }
-  .main-content h1,
+  .main-content h1 {
+    font-size: 2em;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #076585;
+    border-bottom: 1px LightGrey solid; }
   .main-content h2,
   .main-content h3,
   .main-content h4,
@@ -168,10 +179,7 @@ a {
   .main-content h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-weight: normal;
     color: #076585; }
-  .main-content h1 {
-    font-size: 2em; }
   .main-content p {
     margin-bottom: 1em; }
   .main-content code {
@@ -314,7 +322,6 @@ a {
   font-weight: bold; }
   .site-footer-owner a {
     color: #333;
-    cursor: crosshair;
     text-decoration: orange wavy underline; }
 
 .site-footer-credits {

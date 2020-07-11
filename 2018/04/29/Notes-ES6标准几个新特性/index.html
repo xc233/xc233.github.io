@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <title>Xc.Zhang 的博客</title>
+    <title>Xc&#39;s Blog</title>
     
       <link rel="icon" href="/favicon.png">
     
@@ -24,7 +24,7 @@
       <blockquote>
 <p>ES6的发布也已经有几年时间了，本文是我自己学习Nodejs的一点笔记，更深入的学习可以查看阮一峰老师的开源书籍——<a href="http://es6.ruanyifeng.com/" target="_blank" rel="noopener">《ECMAScript 6 入门》</a>。  </p>
 </blockquote>
-<h3 id="Let-与-Const"><a href="#Let-与-Const" class="headerlink" title="Let 与 Const"></a>Let 与 Const</h3><p>Let是ES6中新增的命令，用法类似于Var。但Let声明的变量不存在预解析</p>
+<h2 id="Let-与-Const"><a href="#Let-与-Const" class="headerlink" title="Let 与 Const"></a>Let 与 Const</h2><p>Let是ES6中新增的命令，用法类似于Var。但Let声明的变量不存在预解析</p>
 <pre><code class="Javascript">console.log(num);
 //预解析
 var num = 123;
@@ -62,7 +62,7 @@ let a = 4;//SyntaxError: Identifier &#39;a&#39; has already been declared
 abc = 123;
 console.log(abc);//TypeError: Assignment to constant variable.
 </code></pre>
-<h3 id="变量的解构赋值"><a href="#变量的解构赋值" class="headerlink" title="变量的解构赋值"></a>变量的解构赋值</h3><p>原来的赋值方法：</p>
+<h2 id="变量的解构赋值"><a href="#变量的解构赋值" class="headerlink" title="变量的解构赋值"></a>变量的解构赋值</h2><p>原来的赋值方法：</p>
 <pre><code class="js">var a = 4, b = 5, c = 6;
 console.log(a,b,c);
 </code></pre>
@@ -100,7 +100,7 @@ console.log(&#39;hello&#39;.length);
 let {length:l} = &#39;hello&#39;;
 console.log(l);
 </code></pre>
-<h3 id="字符串扩展"><a href="#字符串扩展" class="headerlink" title="字符串扩展"></a>字符串扩展</h3><p>includes()   判断字符串中是否包含特定的字串</p>
+<h2 id="字符串扩展"><a href="#字符串扩展" class="headerlink" title="字符串扩展"></a>字符串扩展</h2><p>includes()   判断字符串中是否包含特定的字串</p>
 <pre><code class="js">let str = &#39;Hello world&#39;;
 console.log(str.includes(&#39;world&#39;,7))
 </code></pre>
@@ -120,7 +120,7 @@ console.log(url.endsWith(&#39;.html&#39;))
 `;
 console.log(tag);
 </code></pre>
-<h3 id="函数扩展"><a href="#函数扩展" class="headerlink" title="函数扩展"></a>函数扩展</h3><p>rest 参数</p>
+<h2 id="函数扩展"><a href="#函数扩展" class="headerlink" title="函数扩展"></a>函数扩展</h2><p>rest 参数</p>
 <pre><code class="js">function foo(a,...rest){
     console.log(a);
     console.log(rest);
@@ -172,7 +172,7 @@ foo(12,13);
 </code></pre>
 </li>
 </ol>
-<h3 id="类（本质上就是构造函数）"><a href="#类（本质上就是构造函数）" class="headerlink" title="类（本质上就是构造函数）"></a>类（本质上就是构造函数）</h3><p>类的基本用法</p>
+<h2 id="类（本质上就是构造函数）"><a href="#类（本质上就是构造函数）" class="headerlink" title="类（本质上就是构造函数）"></a>类（本质上就是构造函数）</h2><p>类的基本用法</p>
 <pre><code class="js">class Person{
     constructor(sex,weight){
         this.sex = sex;
@@ -205,7 +205,7 @@ stu.showSex();
 stu.showWeight();
 Student.showInfo();
 </code></pre>
-<h3 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h3><p>这就是个人的一点笔记，用于开发查询时使用，写的比较仓促，不适合作为教程学习。感谢阅读。</p>
+<h2 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h2><p>这就是个人的一点笔记，用于开发查询时使用，写的比较仓促，不适合作为教程学习。感谢阅读。</p>
 
     </div>
 </article>
